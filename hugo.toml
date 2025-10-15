@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL ="https://Muneesh27.github.io/"
 languageCode = 'en-us'
-title = 'Blue Wolf Assets'
+title = 'Adventure Northen'
 
 [menu]
   [[menu.main]]
