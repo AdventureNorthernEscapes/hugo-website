@@ -1,0 +1,43 @@
+<footer class="site-footer bg-dark-blue text-light section-padding pt-5 pb-4">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-5 col-md-12">
+                <img src="/images/logo-white.png" class="footer-logo mb-3" alt="Logo">
+                <p class="pe-lg-5">Creating generational wealth through strategic real estate investments and collaborative partnerships.</p>
+                <div class="social-icons mt-4">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4">Navigation</h5>
+                <ul class="list-unstyled">
+                    {{ range .Site.Menus.main }}
+                    <li class="mb-2"><a href="{{ .URL }}" class="text-decoration-none text-light">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                 <h5 class="mb-4">Contact Information</h5>
+                 <ul class="list-unstyled">
+                    <li class="contact-info-item">
+                        <i class="fa fa-phone"></i>
+                        <span>0800 088 8461</span>
+                    </li>
+                    <li class="contact-info-item">
+                        <i class="fa fa-envelope"></i>
+                        <span>info@bluewolfassets.co.uk</span>
+                    </li>
+                    <li class="contact-info-item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>Unit 2, The Stables, UK</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom mt-5">
+             &copy; {{ now.Format "2006" }} {{ .Site.Title }}. All Rights Reserved.
+        </div>
+    </div>
+</footer>

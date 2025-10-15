@@ -1,0 +1,11 @@
+<section class="cta-section">
+    <div class="container">
+        <h2>{{ .Params.cta.title }}</h2>
+        <p>{{ .Params.cta.content }}</p>
+        <div class="button-group">
+            {{ range .Params.cta.buttons }}
+            <a href="{{ .url }}" class="btn {{ if .primary }}btn-primary{{ else }}btn-outline{{ end }}">{{ .text }}</a>
+            {{ end }}
+        </div>
+    </div>
+</section>

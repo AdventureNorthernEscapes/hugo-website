@@ -1,0 +1,16 @@
+<section class="pathways-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>{{ .Params.pathways.title }}</h2>
+        </div>
+        <div class="pathways-grid">
+            {{ range .Params.pathways.items }}
+            <div class="pathway-card">
+                <i class="{{ .icon }}"></i>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

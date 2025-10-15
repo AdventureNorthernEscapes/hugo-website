@@ -1,0 +1,141 @@
+{{ define "main" }}
+<section
+  class="hero-section"
+  style="background-image: url('{{ .Params.hero.background_image }}'); min-height: 50vh;"
+>
+  <div class="hero-overlay"></div>
+  <div
+    class="container position-relative text-center py-5"
+    style="padding-top: 100px"
+  >
+    <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container text-center about-intro-text">
+    <h2 class="display-5 fw-bold mb-4">{{ .Params.intro.title }}</h2>
+    <p class="lead">{{ .Params.intro.content }}</p>
+  </div>
+</section>
+
+<section class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center display-5 fw-bold mb-5">
+      {{ .Params.core_values.title }}
+    </h2>
+    <div class="row g-4">
+      {{ range .Params.core_values.values }}
+      <div class="col-md-6 col-lg-3">
+        <div class="core-value-card text-center">
+          <i class="{{ .icon }} mb-4"></i>
+          <h3 class="h5 fw-bold">{{ .title }}</h3>
+          <p class="card-text">{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="image-gallery grid gap-3">
+          <img
+            src="{{ index .Params.generational_wealth.images 0 }}"
+            alt="Building Wealth Together Main"
+            class="img-fluid main-image"
+          />
+          <div class="row g-3 mt-0">
+            <div class="col-6">
+              <img
+                src="{{ index .Params.generational_wealth.images 1 }}"
+                alt="Building Wealth Together Thumb 1"
+                class="img-fluid thumb-image"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="{{ index .Params.generational_wealth.images 2 }}"
+                alt="Building Wealth Together Thumb 2"
+                class="img-fluid thumb-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <p class="h6 text-primary-custom fw-bold text-uppercase mb-2">
+          {{ .Params.generational_wealth.subtitle }}
+        </p>
+        <h2 class="display-5 fw-bold mb-4">
+          {{ .Params.generational_wealth.title }}
+        </h2>
+        <p class="lead mb-4">
+          {{ .Params.generational_wealth.content | safeHTML }}
+        </p>
+        <a
+          href="{{ .Params.generational_wealth.button_url }}"
+          class="btn btn-custom-primary btn-lg"
+          >{{ .Params.generational_wealth.button_text }}</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding ">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="image-gallery grid gap-3">
+          <img
+            src="{{ index .Params.experience.images 0 }}"
+            alt="Experience You Can Trust Main"
+            class="img-fluid main-image"
+          />
+          <div class="row g-3 mt-0">
+            <div class="col-6">
+              <img
+                src="{{ index .Params.experience.images 1 }}"
+                alt="Experience You Can Trust Thumb 1"
+                class="img-fluid thumb-image"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="{{ index .Params.experience.images 2 }}"
+                alt="Experience You Can Trust Thumb 2"
+                class="img-fluid thumb-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold mb-4">{{ .Params.experience.title }}</h2>
+        <p class="lead mb-5">{{ .Params.experience.content }}</p>
+        <div class="row text-center experience-stats">
+          {{ range .Params.experience.stats }}
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3 class="h3">{{ .value }}</h3>
+            <p class="p text-muted">{{ .label }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding bg-dark-blue  text-center">
+  <div class="container">
+    <h2 class=" fw-bold mb-4">{{ .Params.cta.title }}</h2>
+    <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg"
+      >{{ .Params.cta.button_text }}</a
+    >
+  </div>
+</section>
+{{ end }}

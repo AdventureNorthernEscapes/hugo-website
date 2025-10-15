@@ -1,0 +1,42 @@
+{{ define "main" }}
+<section class="hero-section" style="background-image: url('/images/services-hero.jpg'); min-height: 50vh;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative text-center py-5" style="padding-top: 100px;">
+        <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>
+        <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+    </div>
+</section>
+
+<section class="services-section section-padding">
+    <div class="container">
+        {{ range $index, $element := .Params.services }}
+        <div class="row g-5 align-items-center service-block {{ if ne $index 0 }}mt-5 pt-5{{ end }}">
+            <div class="col-lg-6 {{ if modBool $index 2 }}order-lg-2{{ end }}">
+                <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="col-lg-6">
+                <div class="service-content">
+                    <i class="{{ .icon }} service-icon mb-3"></i>
+                    <h2 class="display-5 fw-bold mb-3">{{ .title }}</h2>
+                    <p class="lead">{{ .description }}</p>
+                    <ul class="service-features list-unstyled mt-4">
+                        {{ range .features }}
+                        <li><i class="fa-solid fa-check text-primary-custom"></i> {{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    <a href="{{ .button_url }}" class="btn btn-custom-outline btn-lg mt-4">{{ .button_text }}</a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<section class="section-padding bg-dark-blue  text-center">
+    <div class="container">
+        <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.cta.title }}</p>
+        <h2 class=" fw-bold mb-4">{{ .Params.cta.subtitle }}</h2>
+        <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg">{{ .Params.cta.button_text }}</a>
+    </div>
+</section>
+{{ end }}

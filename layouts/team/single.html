@@ -1,0 +1,68 @@
+{{ define "main" }}
+<section class="hero-section" style="background-image: url('{{ .Params.hero.background_image }}'); height: 50vh;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative text-center py-5" style="padding-top: 100px;">
+        <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container text-center col-lg-8">
+        <h2 class="display-5 fw-bold mb-4">{{ .Params.intro.title }}</h2>
+        <p class="lead">{{ .Params.intro.content }}</p>
+    </div>
+</section>
+
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            {{ range .Params.team_members }}
+            <div class="col-md-6 col-lg-4">
+                <div class="team-member-card text-center">
+                    <img src="{{ .image }}" class="img-fluid" alt="{{ .name }}">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-1">{{ .name }}</h3>
+                        <p class="text-primary-custom fw-semibold mb-3">{{ .title }}</p>
+                        <p class="card-text">{{ .bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="collaboration-excellence-text">
+                    <h2 class="display-5 fw-bold mb-4">{{ .Params.collaboration_excellence.title }}</h2>
+                    <p class="lead mb-4">{{ .Params.collaboration_excellence.content | safeHTML }}</p>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="collaboration-gallery">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="{{ index .Params.collaboration_excellence.images 0 }}" alt="Collaboration Image 1" class="tall-image">
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ index .Params.collaboration_excellence.images 1 }}" alt="Collaboration Image 2" class="short-image mb-3">
+                            <img src="{{ index .Params.collaboration_excellence.images 2 }}" alt="Collaboration Image 3" class="short-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding bg-dark-blue  text-center">
+    <div class="container">
+        <h2 class="display-5 fw-bold mb-4">{{ .Params.partners.title }}</h2>
+        <p class="lead mb-5 mx-auto" style="max-width: 700px;">{{ .Params.partners.content }}</p>
+        <a href="{{ .Params.partners.button_url }}" class="btn btn-custom-primary btn-lg">{{ .Params.partners.button_text }}</a>
+    </div>
+</section>
+{{ end }}

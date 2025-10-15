@@ -1,0 +1,112 @@
+{{ define "main" }}
+<section
+  class="hero-section"
+  style="background-image: url('{{ .Params.hero.background_image }}'); height: 50vh;"
+>
+  <div class="hero-overlay"></div>
+  <div
+    class="container position-relative text-center py-5"
+    style="padding-top: 100px"
+  >
+    <p class="h6 text-primary-custom fw-bold mb-2">
+      {{ .Params.hero.subtitle }}
+    </p>
+    <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <p class="text-primary-custom fw-bold text-uppercase mb-2">Reach Out</p>
+        <h2 class="display-5 fw-bold mb-4">{{ .Params.get_in_touch.title }}</h2>
+        <p class="lead mb-5">{{ .Params.get_in_touch.content }}</p>
+
+        <div class="mb-5">
+          {{ range .Params.get_in_touch.contact_details }}
+          <div class="contact-info-block">
+            <i class="{{ .icon }}"></i>
+            <div>
+              <p class="mb-0 fw-bold">{{ .label }}</p>
+              <p class="mb-0">{{ .value }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        <h3 class="h4 fw-bold mb-4">
+          {{ .Params.get_in_touch.office_hours_title }}
+        </h3>
+        <table class="office-hours-table">
+          <tbody>
+            {{ range .Params.get_in_touch.office_hours }}
+            <tr>
+              <td>{{ .day }}</td>
+              <td class="text-end">{{ .time }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="contact-form-card">
+          <h3 class="h4 fw-bold mb-4">Send us a Message</h3>
+          <form action="#" method="POST" class="needs-validation" novalidate>
+            <div class="mb-4">
+              <label for="fullName" class="form-label">Full Name*</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="fullName"
+                placeholder="John Doe"
+                required
+              />
+              <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+            <div class="mb-4">
+              <label for="emailAddress" class="form-label"
+                >Email Address*</label
+              >
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="emailAddress"
+                placeholder="john.doe@example.com"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control form-control-lg"
+                id="phoneNumber"
+                placeholder="0123 456 7890"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label">Message*</label>
+              <textarea
+                class="form-control form-control-lg"
+                id="message"
+                rows="5"
+                placeholder="Tell us about your investment goals..."
+                required
+              ></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-custom-primary btn-lg">
+              Send Message <i class="fa fa-paper-plane ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section class="hero-section" style="background-image: url('{{ .Params.hero_image }}'); min-height: 60vh;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative text-center py-5" style="padding-top: 100px;">
+        <p class="h6 text-primary-custom fw-bold mb-2">Case Study</p>
+        <h1 class="display-2 fw-bold">{{ .Title }}</h1>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="project-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+
+        <div class="project-gallery-wrapper mt-5 pt-5">
+            <h3 class="mb-4 project-gallery-title text-center">Project Gallery</h3>
+            <div class="row g-3 project-gallery">
+                {{ with .Params.gallery_images }}
+                    {{ range . }}
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="{{ . }}" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="{{ . }}">
+                            <img src="{{ . }}" class="img-fluid" alt="Gallery image for {{ $.Title }}" />
+                        </a>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding bg-light text-center">
+    <div class="container">
+        <a href="/case-studies/" class="btn btn-custom-primary btn-lg">
+            <i class="fa-solid fa-arrow-left me-2"></i> Back to All Case Studies
+        </a>
+    </div>
+</section>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark border-0"> <div class="modal-header border-0 pb-0"> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="" class="img-fluid modal-image" alt="Full size gallery image" />
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

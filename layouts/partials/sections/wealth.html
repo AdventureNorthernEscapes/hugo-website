@@ -1,0 +1,14 @@
+<section class="wealth-section">
+    <div class="container two-col-layout">
+        <div class="image-gallery">
+            <img src="{{ index .Params.wealth.images 0 }}" alt="Main property image" class="main-image">
+            <img src="{{ index .Params.wealth.images 1 }}" alt="Interior view 1" class="thumb-image">
+            <img src="{{ index .Params.wealth.images 2 }}" alt="Interior view 2" class="thumb-image">
+        </div>
+        <div class="text-content">
+            <h2>{{ .Params.wealth.title }}</h2>
+            <p>{{ .Params.wealth.content | safeHTML }}</p>
+            <a href="{{ .Params.wealth.button.url }}" class="btn">{{ .Params.wealth.button.text }}</a>
+        </div>
+    </div>
+</section>

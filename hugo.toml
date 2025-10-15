@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Blue Wolf Assets'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    name = "Meet The Team"
+    url = "/team/"
+    weight = 30
+ [[menu.main]]
+  name = "Services"
+  url = "/services/"
+  weight = 40 # This will place it after "Meet The Team"
+
+[[menu.main]]
+  name = "Case Studies"
+  url = "/case-studies/"
+  weight = 50 # This will place it after "Services"

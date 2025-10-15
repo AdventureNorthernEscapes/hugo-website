@@ -1,0 +1,88 @@
+{{ define "main" }}
+<section class="hero-section homepage-hero" style="background-image: url('{{ .Params.hero.background_image }}'); min-height: 80vh;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative py-5 homepage-hero-content" style="padding-top: 100px;">
+        <h1 class="display-3 fw-bold mb-3">{{ .Params.hero.title }}</h1>
+        <p class="lead mb-4">{{ .Params.hero.subtitle }}</p>
+        <a href="{{ .Params.hero.button.url }}" class="btn btn-custom-primary btn-lg">{{ .Params.hero.button.text }}</a>
+    </div>
+</section>
+
+<section class="collaboration-section section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-primary-custom fw-bold text-uppercase d-block mb-2">Our Approach</span>
+            <h2 class="display-5 fw-bold">{{ .Params.collaboration.title }}</h2>
+        </div>
+        <p class="lead text-center mx-auto" style="max-width: 700px;">{{ .Params.collaboration.content }}</p>
+    </div>
+</section>
+
+<section class="pathways-section section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">{{ .Params.pathways.title }}</h2>
+        </div>
+        <div class="row g-4">
+            {{ range .Params.pathways.items }}
+            <div class="col-lg-4 col-md-6">
+                <div class="pathways-card">
+                    <i class="{{ .icon }}"></i>
+                    <h3 class="fw-bold">{{ .title }}</h3>
+                    <p class="card-text">{{ .description }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="wealth-section section-padding">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="image-gallery grid gap-3">
+                    <img src="{{ index .Params.wealth.images 0 }}" alt="Main property image" class="img-fluid main-image">
+                    <div class="row g-3 mt-0">
+                        <div class="col-6">
+                            <img src="{{ index .Params.wealth.images 1 }}" alt="Interior view 1" class="img-fluid thumb-image">
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ index .Params.wealth.images 2 }}" alt="Interior view 2" class="img-fluid thumb-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-content">
+                <h2 class="display-5 fw-bold mb-4">{{ .Params.wealth.title }}</h2>
+                <p class="lead mb-4">{{ .Params.wealth.content | safeHTML }}</p>
+                <a href="{{ .Params.wealth.button.url }}" class="btn btn-custom-primary btn-lg">{{ .Params.wealth.button.text }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section section-padding">
+    <div class="container">
+        <h2 class="display-5 mb-4">{{ .Params.cta.title }}</h2>
+        <p class="lead mb-5">{{ .Params.cta.content }}</p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <a href="{{ (index .Params.cta.buttons 0).url }}" class="btn btn-custom-primary btn-lg px-4">{{ (index .Params.cta.buttons 0).text }}</a>
+            <a href="{{ (index .Params.cta.buttons 1).url }}" class="btn btn-custom-outline btn-lg px-4">{{ (index .Params.cta.buttons 1).text }}</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section py-4">
+    <div class="container">
+        <div class="row text-center">
+            {{ range .Params.stats.items }}
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h3 class="mb-0">{{ .value }}</h3>
+                <p class="text-white-50">{{ .label }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

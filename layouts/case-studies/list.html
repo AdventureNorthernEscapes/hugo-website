@@ -1,0 +1,69 @@
+{{ define "main" }}
+<section class="hero-section" style="background-image: url('{{ .Params.hero_image | default "/images/about-hero.jpg" }}'); min-height: 50vh;">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative text-center py-5" style="padding-top: 100px;">
+        <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>
+        <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+    </div>
+</section>
+
+<section class="section-padding text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead">{{ .Params.intro.content }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="case-studies-list">
+    {{ range .Pages.ByDate.Reverse }} <section class="case-study-block section-padding">
+        <div class="container">
+            <a href="{{ .RelPermalink }}" class="case-study-hero-link">
+                <div class="case-study-hero" style="background-image: url('{{ .Params.hero_image }}');">
+                    <div class="case-study-hero-overlay"></div>
+                    <h2 class="case-study-title">{{ .Title }}</h2>
+                </div>
+            </a>
+
+            <div class="row g-4 mt-4">
+                {{ with .Params.gallery_images }}
+                    {{ range first 3 . }} <div class="col-md-4">
+                        <img src="{{ . }}" class="img-fluid rounded shadow-sm" alt="Gallery image for {{ $.Title }}">
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+            <div class="project-process-wrapper mt-5">
+                <h3 class="project-process-title"><i class="fa-solid fa-chevron-right me-2"></i> Project Process</h3>
+                <div class="row g-4">
+                    {{ with .Params.project_process }}
+                        {{ range $index, $element := . }}
+                        <div class="col-md-6">
+                            <div class="process-card">
+                                <div class="process-card-number">{{ add $index 1 }}</div>
+                                <div class="process-card-content">
+                                    <h4 class="process-card-title">{{ .title }}</h4>
+                                    <p class="process-card-description">{{ .description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+    </section>
+    {{ end }}
+</div>
+
+<section class="section-padding bg-dark-blue text-white text-center">
+    <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Ready to Build Your Own Success Story?</h2>
+        <a href="/contact" class="btn btn-custom-primary btn-lg">Partner With Us</a>
+    </div>
+</section>
+{{ end }}
