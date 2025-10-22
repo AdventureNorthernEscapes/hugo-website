@@ -5,24 +5,24 @@ layout: "contact"
 # --- Hero Section ---
 hero:
   background_image: "/images/contact-hero.jpg"
-  subtitle: "Let's Connect"
-  title: "Begin Your Investment Journey Today"
+  subtitle: "Get in Touch with "
+  title: "Adventure Northern Escapes"
 
 # --- Get in Touch Section ---
 get_in_touch:
-  title: "Get in Touch"
-  content: "Ready to explore investment opportunities with Blue Wolf Assets? We'd love to hear from you. Fill out the form and we'll get back to you promptly."
+  title: "Contact Information"
+  content: "You can reach us via the following methods:"
   
   contact_details:
     - icon: "fa-solid fa-phone"
       label: "Phone"
-      value: "0800 088 8461"
+      value: "+44 7728 407 050"
     - icon: "fa-solid fa-envelope"
       label: "Email"
-      value: "info@bluewolfassets.co.uk"
+      value: "info@adventure-northern-escapes.co.uk"
     - icon: "fa-solid fa-location-dot"
       label: "Address"
-      value: "Unit 2, The Stables, Clavendon Hall Estate, Yatter, Essex, Clavendon, 8823 7LJ, United Kingdom"
+      value: "Adventure Northern Escapes Ltd 3 Charlesworth Place, SW13 0JQ, London, United Kingdom"
 
   office_hours_title: "Office Hours"
   office_hours:

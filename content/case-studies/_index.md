@@ -7,7 +7,7 @@ hero:
   title: "Proven Track Record of Excellence"
 
 intro:
-  content: "Explore a selection of our successfully completed projects. Each case study demonstrates our commitment to quality, strategic planning, and delivering exceptional returns for our investment partners."
+  content: "Discover how Adventure Northern Escapes revitalises properties to create exceptional living spaces. Below are some of our most exciting projects and how they have made a difference."
 
 case_studies:
   - title: "Lakeside Manor Revival"

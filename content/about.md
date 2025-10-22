@@ -9,8 +9,8 @@ hero:
   
 # --- Intro Section ---
 intro:
-  title: "Preserving Wealth for Generations"
-  content: "Our success lies in responding to the specific needs of our clients & partners by ensuring their wealth is here for the long term. Since our establishment, our investment philosophy has been built on a foundation of trust, integrity & transparency. We believe in building lasting relationships with our clients."
+  title: "About Adventure Northern Escapes"
+  content: "Welcome to Adventure Northern Escapes! We are a UK-based property investment and management company dedicated to transforming real estate into thriving homes and unforgettable escapes. Whether it's creating beautiful rental properties or holiday homes that inspire, we focus on delivering quality, comfort, and value."
 
 # --- Core Values Section ---
 core_values:

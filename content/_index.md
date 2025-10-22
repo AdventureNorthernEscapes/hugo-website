@@ -4,8 +4,8 @@ title: "Investment Homepage"
 # --- Hero Section ---
 hero:
   background_image: "/images/hero-bg.jpg"
-  title: "Unlock Potential & Increase Value"
-  subtitle: "We build tailored investment portfolios designed to maximize returns, providing our clients with robust strategies for financial growth."
+  title: "Welcome to Adventure Northern Escapes!"
+  subtitle: "We are a UK-based property investment and management company dedicated to transforming real estate into thriving homes and unforgettable escapes. Our focus is on creating quality, comfort, and value—whether it's a welcoming rental property or an inspiring holiday getaway"
   button:
     text: "LEARN MORE"
     url: "/about"
@@ -13,7 +13,7 @@ hero:
 # --- Collaboration Section ---
 collaboration:
   title: "Building Wealth Through Collaboration"
-  content: "We believe in creating lasting partnerships with our clients. By understanding your unique financial goals, we devise and implement strategies that turn your ambitions into tangible assets. Our collaborative approach ensures transparency and aligns our success with yours."
+  content: "Our vision is simple: to provide great living spaces that people love to call home. We understand that a property is more than just bricks and mortar—it's about creating environments where individuals and families can thrive. Adventure Northern Escapes aims to contribute to communities by revitalising properties and maintaining the highest standards of service."
 
 # --- Pathways Section ---
 pathways:
