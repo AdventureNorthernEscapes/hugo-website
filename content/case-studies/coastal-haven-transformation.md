@@ -1,7 +1,7 @@
 ---
 title: "XX Creswell Street, St Helens"
 date: 2025-06-15
-hero_image: "/images/case-1-hero.jpg"
+hero_image: "/hugo-website/images/case-1-hero.jpg"
 gallery_images:
   - "/images/case-3-gallery-1.jpg"
   - "/images/case-3-gallery-2.jpg"

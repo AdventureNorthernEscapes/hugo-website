@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="hero-section" style="background-image: url('{{ .Params.hero_image }}'); min-height: 60vh;">
+<section class="hero-section" style="background-image: url('{{ .Params.hero_image | relURL}}'); min-height: 60vh;">
     <div class="hero-overlay"></div>
     <div class="container position-relative text-center py-5" style="padding-top: 100px;">
         <p class="h6 text-primary-custom fw-bold mb-2">Case Study</p>

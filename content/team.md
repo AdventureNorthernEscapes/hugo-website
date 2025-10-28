@@ -4,7 +4,7 @@ layout: "team"
 
 # --- Hero Section ---
 hero:
-  background_image: "/images/team-hero.jpg"
+  background_image: "/hugo-website/images/team-hero.jpg"
   title: "Meet The Team"
   
 # --- Intro Section ---

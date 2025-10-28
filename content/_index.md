@@ -3,7 +3,7 @@ title: "Investment Homepage"
 
 # --- Hero Section ---
 hero:
-  background_image: "/images/hero-bg.jpg"
+  background_image: "images/hero-bg.jpg"
   title: "Welcome to Adventure Northern Escapes!"
   subtitle: "We are a UK-based property investment and management company dedicated to transforming real estate into thriving homes and unforgettable escapes. Our focus is on creating quality, comfort, and value—whether it's a welcoming rental property or an inspiring holiday getaway"
   button:

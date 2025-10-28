@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="hero-section" style="background-image: url('{{ .Params.hero_image | default "/images/about-hero.jpg" }}'); min-height: 50vh;">
+<section class="hero-section" style="background-image: url('{{ .Params.hero.background_image  }}'); height: 50vh;">
     <div class="hero-overlay"></div>
     <div class="container position-relative text-center py-5" style="padding-top: 100px;">
         <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>

@@ -5,17 +5,19 @@ layout: "case-studies"
 hero:
   subtitle: "Our Portfolio"
   title: "Proven Track Record of Excellence"
+  background_image: "/hugo-website/images/team-hero.jpg"
+
 
 intro:
   content: "Discover how Adventure Northern Escapes revitalises properties to create exceptional living spaces. Below are some of our most exciting projects and how they have made a difference."
 
 case_studies:
   - title: "Lakeside Manor Revival"
-    hero_image: "/images/case-1-hero.jpg"
+    hero_image: "/hugo-website/images/case-1-hero.jpg"
     gallery_images:
-      - "/images/case-1-thumb-1.jpg"
-      - "/images/case-1-thumb-2.jpg"
-      - "/images/case-1-thumb-3.jpg"
+      - "/hugo-website/images/case-1-thumb-1.jpg"
+      - "/hugo-website/images/case-1-thumb-2.jpg"
+      - "/hugo-website/images/case-1-thumb-3.jpg"
     details:
       - label: "Project Type"
         value: "Residential Renovation"
@@ -31,11 +33,11 @@ case_studies:
         value: "Sold for 25% above asking price."
 
   - title: "Mountain View Estate Development"
-    hero_image: "/images/case-2-hero.jpg"
+    hero_image: "/hugo-website/images/case-2-hero.jpg"
     gallery_images:
-      - "/images/case-2-thumb-1.jpg"
-      - "/images/case-2-thumb-2.jpg"
-      - "/images/case-2-thumb-3.jpg"
+      - "/hugo-website/images/case-2-thumb-1.jpg"
+      - "/hugo-website/images/case-2-thumb-2.jpg"
+      - "/hugo-website/images/case-2-thumb-3.jpg"
     details:
       - label: "Project Type"
         value: "New Build Development"
@@ -51,11 +53,11 @@ case_studies:
         value: "All units sold off-plan before completion."
 
   - title: "Coastal Haven Transformation"
-    hero_image: "/images/case-3-hero.jpg"
+    hero_image: "/hugo-website/images/case-3-hero.jpg"
     gallery_images:
-      - "/images/case-3-thumb-1.jpg"
-      - "/images/case-3-thumb-2.jpg"
-      - "/images/case-3-thumb-3.jpg"
+      - "/hugo-website/images/case-3-thumb-1.jpg"
+      - "/hugo-website/images/case-3-thumb-2.jpg"
+      - "/hugo-website/images/case-3-thumb-3.jpg"
     details:
       - label: "Project Type"
         value: "Luxury Flip"

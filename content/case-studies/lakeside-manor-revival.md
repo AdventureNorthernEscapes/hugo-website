@@ -1,7 +1,7 @@
 ---
 title: "XX Charnwood Street, St Helens"
 date: 2025-10-14
-hero_image: "/images/case-1-hero.jpg"
+hero_image: "/hugo-website/images/case-1-hero.jpg"
 gallery_images:
   - "/images/case-1-gallery-1.jpg"
   - "/images/case-1-gallery-2.jpg"

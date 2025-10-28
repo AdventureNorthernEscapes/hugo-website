@@ -4,7 +4,7 @@ layout: "about"
 
 # --- Hero Section ---
 hero:
-  background_image: "/images/about-hero.jpg"
+  background_image: "/hugo-website/images/about-hero.jpg"
   title: "About Us"
   
 # --- Intro Section ---

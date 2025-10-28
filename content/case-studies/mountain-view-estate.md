@@ -1,7 +1,7 @@
 ---
 title: "The Celestial Cabin (N29), Knaresborough"
 date: 2025-08-22
-hero_image: "/images/case-1-hero.jpg"
+hero_image: "/hugo-website/images/case-1-hero.jpg"
 gallery_images:
   - "/images/case-2-gallery-1.jpg"
   - "/images/case-2-gallery-2.jpg"
