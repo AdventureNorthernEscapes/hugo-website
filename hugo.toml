@@ -3,6 +3,7 @@ relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
 title = 'Adventure Northen'
+publishDir = "docs"
 
 [menu]
   [[menu.main]]
