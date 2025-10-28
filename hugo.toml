@@ -1,5 +1,4 @@
 baseURL = "https://adventurenorthernescapes.github.io/hugo-website/"
-publishDir = "docs"
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
