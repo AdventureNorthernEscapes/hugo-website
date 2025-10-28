@@ -21,17 +21,21 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
         with:
-          submodules: true   # pulls theme if using a submodule
+          submodules: true      # needed if using a theme as submodule
           fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.135.0'   # use a version you tested locally
+          hugo-version: '0.152.2'   # or a version you’ve tested locally
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          # Force the output directory = public (ignores publishDir in config)
+          hugo --minify -d ./public
+          echo "Built files:"
+          ls -la ./public || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
