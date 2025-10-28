@@ -16,7 +16,7 @@ get_in_touch:
   contact_details:
     - icon: "fa-solid fa-phone"
       label: "Phone"
-      value: "+44 7728 407 050"
+      value: "+44 20 4592 1076"
     - icon: "fa-solid fa-envelope"
       label: "Email"
       value: "info@adventure-northern-escapes.co.uk"
