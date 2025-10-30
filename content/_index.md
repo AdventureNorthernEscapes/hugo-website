@@ -19,22 +19,42 @@ collaboration:
 pathways:
   title: "Strategic Investment Pathways"
   items:
-    - icon: "fa-solid fa-chart-pie" # Font Awesome icon class
-      title: "Portfolio Builder"
-      description: "Build a diversified property portfolio with passive income streams. Includes Buy to Let, HMOs, and Serviced Accommodation opportunities with shared investment and long-term capital appreciation."
+    - icon: "fa-solid fa-chart-pie"
+      title: "Capital Savings Accelerator"
+      description: |
+        - Offers a fixed, reliable return on your investment.
+        - Flexible investment terms — choose shorter durations for quicker, guaranteed results.
+        - No hands-on work involved — enjoy the rewards of a truly passive income.
+        - Includes an “earn as you learn” approach for those interested in building their own property portfolio.
+        - Get involved in each stage of our projects and learn how to replicate the process yourself.
+        - Get in touch to find out more.
 
     - icon: "fa-solid fa-house-chimney-window"
-      title: "Capital Driven Investment"
-      description: "Accelerate your capital growth with flexible investment periods and exceptional returns. A hands-off approach designed for investors seeking quick, reliable results without active involvement."
+      title: "Portfolio Builder"
+      description: |
+        - Ideal for long-term investors who want involvement in key decisions without daily management.
+        - Designed to build a substantial property portfolio through joint venture partnerships.
+        - Combines buy-to-lets, HMOs, and serviced accommodations.
+        - Assets are co-owned — profits and capital growth are shared.
+        - Our team handles sourcing, refurbishing, refinancing, and tenant management.
+        - Get in touch to learn more.
 
     - icon: "fa-solid fa-seedling"
-      title: "Long-term Growth"
-      description: "Strategic property flips targeting larger projects with substantial returns. Focus on family homes and developments with building and planning elements that deliver premium value."
+      title: "Buy to Sell - Flips"
+      description: |
+        - The classic buy, refurbish, and sell strategy — still one of the most effective in today’s market.
+        - Suited for investors seeking higher returns through larger-scale projects.
+        - Typical projects include family homes, multi-unit conversions, or land developments.
+        - Runs over one to three years before exiting for the funding partner.
+        - Offers significantly higher profit potential.
+        - Get in touch to find out more.
+
+
 
 # --- Wealth Section ---
 wealth:
   title: "Creating & Preserving Wealth"
-  content: "Our expertise lies in identifying undervalued assets and optimizing them for peak performance. We handle every aspect of the investment lifecycle, from acquisition to management and eventual exit, ensuring your capital is working effectively for you.<br><br>We are committed to delivering exceptional results and building a secure financial future for our clients."
+  content: "At Adventure Northern Escapes, we specialise in identifying undervalued properties and transforming them into high-performing assets. From acquisition through to management and eventual exit, we oversee every phase of the investment lifecycle, ensuring that your capital is maximised for optimal returns. <br><br>Our commitment goes beyond just financial growth — we focus on adding value to communities and delivering long-term, sustainable wealth for our investors. Through strategic property purchases, refurbishments, and dedicated management, we help build a secure financial future, while enhancing local environments for residents."
   button:
     text: "Learn More"
     url: "/about"

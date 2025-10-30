@@ -14,23 +14,23 @@ intro:
 
 # --- Team Members Section ---
 team_members:
-  - name: "Shaun Scott"
-    title: "CEO & Founder"
+  - name: "Mathieu Gauthron "
+    title: "Director"
     image: "/images/team-member-1.jpg" # Update image paths
-    bio: "With over 15 years of experience, Shaun leads the team with a focus on strategic growth and client success."
-  - name: "Jane Doe"
-    title: "Investment Director"
+    bio: "Mathieu leads Adventure Northern Escapes with a wealth of experience in property investment and management. As Director, he shapes the company’s strategic direction, driving growth and ensuring each project’s success. "
+  - name: "Celeste "
+    title: "Business Development Manager "
     image: "/images/team-member-2.jpg"
-    bio: "Jane specializes in identifying high-yield opportunities and managing our diverse investment portfolio."
-  - name: "John Smith"
-    title: "Financial Advisor"
+    bio: "Celeste is the driving force behind the company's expansion. With her focus on strategic partnerships and business development, she helps Adventure Northern Escapes grow while maintaining the highest standards in service and property management. "
+  - name: "Archana "
+    title: "Personal Assistant to the Director "
     image: "/images/team-member-3.png"
-    bio: "John ensures the financial health of our projects and provides expert guidance to our clients."
+    bio: "Archana supports Mathieu with daily operations, project coordination, and ensuring smooth execution of tasks across the business. "
 
 # --- Collaboration & Excellence Section ---
 collaboration_excellence:
   title: "Collaboration & Excellence"
-  content: "Our collaborative spirit fuels our innovation. Every project benefits from the collective intelligence of our diverse team, ensuring comprehensive strategies and flawless execution. We believe that true excellence is achieved through shared vision and meticulous teamwork, leading to superior outcomes for our clients.<br><br>We foster an environment where expertise is shared, and every team member contributes to finding the best solutions. This synergy allows us to tackle complex challenges with confidence and deliver results that consistently exceed expectations."
+  content: "At Adventure Northern Escapes, we believe that collaboration is key to delivering exceptional results. Our approach is rooted in building strong, lasting partnerships with trusted professionals, from builders and architects to local craftsmen and property managers. By working closely with a network of talented individuals who share our values, we ensure that every project reflects the highest standards of quality and craftsmanship. <br><br>We hold ourselves to a commitment of excellence in everything we do. Whether it’s transforming a property into a beautiful home or offering a memorable holiday retreat, we always strive for perfection. Our team’s dedication to detail and quality is what sets us apart, ensuring that each property we manage or refurbish becomes a space that people love to live in and visit. "
   images:
     - "/images/collaboration-1.jpg"
     - "/images/collaboration-2.png"

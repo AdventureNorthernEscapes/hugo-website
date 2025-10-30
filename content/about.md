@@ -10,30 +10,28 @@ hero:
 # --- Intro Section ---
 intro:
   title: "About Adventure Northern Escapes"
-  content: "Welcome to Adventure Northern Escapes! We are a UK-based property investment and management company dedicated to transforming real estate into thriving homes and unforgettable escapes. Whether it's creating beautiful rental properties or holiday homes that inspire, we focus on delivering quality, comfort, and value."
+  content: "Adventure Northern Escapes is a UK-based property investment and management company with a passion for transforming real estate. From refurbishing old buildings to creating stunning new homes, we breathe new life into every space we touch. Founded with the vision of providing great living experiences, our company works diligently to ensure that each property offers more than just a place to live—it offers a sense of belonging. ."
 
 # --- Core Values Section ---
 core_values:
   title: "Our Core Values"
   values:
     - icon: "fa-solid fa-handshake"
-      title: "Versatile Focus"
+      title: "Quality"
       description: "We deliver excellence to our clients and partners through a diverse team focused on a singular vision."
     - icon: "fa-solid fa-users"
-      title: "Personable Relationships"
-      description: "We put people at the core of our business and build transparent, long-term relationships."
+      title: "Comfort"
+      description: "Every property we transform is designed with comfort in mind. Whether you're staying for a few nights or a few months, we ensure that our homes provide a warm, welcoming environment for all."
     - icon: "fa-solid fa-lightbulb"
-      title: "Creative Solutions"
-      description: "We are problem solvers. Our ability to think creatively enables us to uncover unique opportunities."
-    - icon: "fa-solid fa-chart-line"
-      title: "Unwavering Commitment"
-      description: "Our dedicated team of professionals are committed to excellence and ensuring our clients' success."
+      title: "Integrity"
+      description: "We believe in doing things right. Our approach is built on strong relationships with trusted partners, local craftspeople, and a focus on delivering transparent, honest service to all our clients. "
+    
 
 # --- Generational Wealth Section ---
 generational_wealth:
   subtitle: "Our Mission"
-  title: "Building Generational Wealth Together"
-  content: "We provide comprehensive investment solutions designed to meet the unique needs of families and individuals seeking to secure their financial future. Our approach combines rigorous analysis with a personal touch, ensuring strategies are aligned with your long-term goals. From wealth growth to preservation, we guide you through every step.<br><br>Our dedication to client success is paramount. We believe in empowering our clients with the knowledge and tools necessary to make informed decisions about their wealth."
+  title: "Crafting Quality Homes and Unforgettable Escapes "
+  content: "At Adventure Northern Escapes, our mission is to breathe new life into properties, transforming them into beautiful, functional spaces. We work with a network of talented builders, architects, and management professionals to ensure every project is completed to the highest standard.   By collaborating with local craftspeople and partners who share our dedication to quality and integrity, we aim to create homes that inspire. This approach not only supports the local economy but also helps us deliver the best possible homes and holiday stays for our clients.   We believe in creating value—not just for our investors but for everyone who interacts with our properties, whether they are tenants, guests, or community members. "
   button_text: "Discover Our Services"
   button_url: "/services"
   images:
