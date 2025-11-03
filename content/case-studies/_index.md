@@ -33,7 +33,7 @@ case_studies:
         value: "Sold for 25% above asking price."
 
   - title: "Mountain View Estate Development"
-    hero_image: "/hugo-website/images/case-2-hero.jpg"
+    hero_image: "/images/case-2-gallery-7.jpg"
     gallery_images:
       - "/hugo-website/images/case-2-thumb-1.jpg"
       - "/hugo-website/images/case-2-thumb-2.jpg"
@@ -53,7 +53,7 @@ case_studies:
         value: "All units sold off-plan before completion."
 
   - title: "Coastal Haven Transformation"
-    hero_image: "/hugo-website/images/case-3-hero.jpg"
+    hero_image: "/hugo-website/images/case-3-gallery-7.jpg"
     gallery_images:
       - "/hugo-website/images/case-3-thumb-1.jpg"
       - "/hugo-website/images/case-3-thumb-2.jpg"
