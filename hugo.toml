@@ -26,3 +26,10 @@ title = 'Adventure Northen'
   name = "Case Studies"
   url = "/case-studies/"
   weight = 50 # This will place it after "Services"
+
+
+ [params]
+  contact_email = "info@adventure-northern-escapes.co.uk"
+  contact_phone = "+44 20 4592 1076"
+  contact_address = "C/O Rodliffe Accounting, Level 37, 1 Canada Square, London, United Kingdom, E14 5AA"
+

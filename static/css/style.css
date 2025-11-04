@@ -150,7 +150,7 @@ a {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for definition */
 }
 .navbar-brand img {
-  height: 32px;
+  width: 66px;
 } /* Logo size adjusted */
 .navbar-nav .nav-link {
   color: #fff; /* White for dark blue header */
@@ -375,7 +375,7 @@ a {
   margin-bottom: 35px;
 }
 
-//* --- CTA Section --- */
+/* --- CTA Section --- */
 .cta-section {
   background-color: var(--dark-blue);
   color: white;
@@ -414,6 +414,16 @@ a {
   font-size: 0.9em;
   margin-bottom: 0;
   color: #4a5568 !important;
+}
+
+/* footer mobile  */
+/* Ensure it stays left aligned on smaller devices */
+@media (max-width: 767px) {
+  .site-footer .contact-info-item,
+  .site-footer .contact-info-item span,
+  .site-footer h5 {
+    text-align: left !important;
+  }
 }
 
 /* --- About Us Page Specific --- */
@@ -595,7 +605,7 @@ a {
   color: var(--primary-color);
 }
 .site-footer .footer-logo {
-  max-height: 40px;
+  width: 66px;
   margin-bottom: 25px;
 }
 .site-footer .social-icons a {

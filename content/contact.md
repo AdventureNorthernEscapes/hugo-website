@@ -22,7 +22,7 @@ get_in_touch:
       value: "info@adventure-northern-escapes.co.uk"
     - icon: "fa-solid fa-location-dot"
       label: "Address"
-      value: "Adventure Northern Escapes Ltd 3 Charlesworth Place, SW13 0JQ, London, United Kingdom"
+      value: "C/O Rodliffe Accounting, Level 37, 1 Canada Square, London, United Kingdom, E14 5AA"
 
   office_hours_title: "Office Hours"
   office_hours:
