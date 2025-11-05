@@ -8,28 +8,31 @@
 </section>
 
 <section class="services-section section-padding">
-    <div class="container">
-        {{ range $index, $element := .Params.services }}
-        <div class="row g-5 align-items-center service-block {{ if ne $index 0 }}mt-5 pt-5{{ end }}">
-            <div class="col-lg-6 {{ if modBool $index 2 }}order-lg-2{{ end }}">
-                <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-lg">
-            </div>
-            <div class="col-lg-6">
-                <div class="service-content">
-                    <i class="{{ .icon }} service-icon mb-3"></i>
-                    <h2 class="display-5 fw-bold mb-3">{{ .title }}</h2>
-                    <p class="lead">{{ .description }}</p>
-                    <ul class="service-features list-unstyled mt-4">
-                        {{ range .features }}
-                        <li><i class="fa-solid fa-check text-primary-custom"></i> {{ . }}</li>
-                        {{ end }}
-                    </ul>
-                    <a href="{{ .button_url }}" class="btn btn-custom-outline btn-lg mt-4">{{ .button_text }}</a>
-                </div>
-            </div>
+  <div class="container">
+    {{ range $index, $element := .Params.services }}
+    <div class="row g-5 align-items-center service-block {{ if ne $index 0 }}mt-5 pt-5{{ end }}">
+      <div class="col-lg-6 {{ if modBool $index 2 }}order-lg-2{{ end }}">
+        <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-lg">
+      </div>
+      <div class="col-lg-6">
+        <div class="service-content">
+          <i class="{{ .icon }} service-icon mb-3"></i>
+          <h2 class="display-5 fw-bold mb-3">{{ .title }}</h2>
+          <p class="lead">{{ .description }}</p>
+          <ul class="service-features list-unstyled mt-4">
+            {{ range .features }}
+            <li><i class="fa-solid fa-check text-primary-custom"></i> {{ . }}</li>
+            {{ end }}
+          </ul>
+
+          {{ if and .button_text .button_url }}
+          <a href="{{ .button_url }}" class="btn btn-custom-outline btn-lg mt-4">{{ .button_text }}</a>
+          {{ end }}
         </div>
-        {{ end }}
+      </div>
     </div>
+    {{ end }}
+  </div>
 </section>
 
 <section class="section-padding bg-dark-blue  text-center">

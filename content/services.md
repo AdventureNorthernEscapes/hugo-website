@@ -16,8 +16,8 @@ services:
       - "Risk mitigation through diversification"
       - "Professional management of all assets"
       - "Transparent reporting and performance tracking"
-    button_text: "Learn More"
-    button_url: "#"
+    # button_text: "Learn More"
+    # button_url: "#"
     image: "/images/service-1.jpg"
 
   - title: "Our Mission"
@@ -28,8 +28,8 @@ services:
       - "Community Support: Our approach strengthens the local economy and fosters meaningful community connections."
       - "Exceptional Living Spaces: Through this collaboration, we deliver outstanding homes and memorable holiday stays for our clients."
       - "Creating Lasting Value: We focus on adding value for everyone involved—investors, tenants, guests, and the wider community."
-    button_text: "Learn More"
-    button_url: "#"
+    # button_text: "Learn More"
+    # button_url: "#"
     image: "/images/service-2.jpg"
 
   - title: "Our Properties"
@@ -41,7 +41,7 @@ services:
       - "Holiday Escape: Experience a relaxing getaway at The Celestial Cabin, our charming static caravan in beautiful Knaresborough"
       - "Comfort in Nature: Enjoy the tranquility of nature with all the modern comforts you need for a perfect retreat."
     button_text: "Learn More"
-    button_url: "#"
+    button_url: "/case-studies"
     image: "/images/service-3.jpg"
 
 cta:
