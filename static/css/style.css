@@ -496,6 +496,7 @@ a {
 .team-member-card img {
   height: 300px; /* Consistent image height */
   object-fit: cover;
+  width:100%;
 }
 .team-member-card .card-body {
   padding: 30px;

@@ -16,7 +16,7 @@ intro:
 team_members:
   - name: "Mathieu Gauthron "
     title: "Director"
-    image: "/images/team-member-1.jpg" # Update image paths
+    image: "/images/team-member-1.png" # Update image paths
     bio: "Mathieu leads Adventure Northern Escapes with a wealth of experience in property investment and management. As Director, he shapes the company’s strategic direction, driving growth and ensuring each project’s success. "
   - name: "Celeste "
     title: "Business Development Manager "
