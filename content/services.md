@@ -5,7 +5,7 @@ layout: "services"
 hero:
   subtitle: "Our Services"
   title: "Three Strategic Pathways to Wealth Creation"
-  background_image: "/images/services-hero.jpg"
+  background_image: "/hugo-website/images/services-hero.jpg"
 
 services:
   - title: "Our Vision"

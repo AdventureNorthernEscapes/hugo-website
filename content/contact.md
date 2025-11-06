@@ -4,7 +4,7 @@ layout: "contact"
 
 # --- Hero Section ---
 hero:
-  background_image: "/images/contact-hero.jpg"
+  background_image: "/hugo-website/images/contact-hero.jpg"
   subtitle: "Get in Touch with "
   title: "Adventure Northern Escapes"
 
