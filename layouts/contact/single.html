@@ -15,39 +15,8 @@
   <div class="container">
     <div class="row g-5">
       
-      <!-- Contact Info -->
-      <div class="col-lg-6">
-        <p class="text-primary-custom fw-bold text-uppercase mb-2">Reach Out</p>
-        <h2 class="display-5 fw-bold mb-4">{{ .Params.get_in_touch.title }}</h2>
-        <p class="lead mb-5">{{ .Params.get_in_touch.content }}</p>
-
-        <div class="mb-5">
-          {{ range .Params.get_in_touch.contact_details }}
-          <div class="contact-info-block">
-            <i class="{{ .icon }}"></i>
-            <div>
-              <p class="mb-0 fw-bold">{{ .label }}</p>
-              <p class="mb-0">{{ .value }}</p>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-
-        <h3 class="h4 fw-bold mb-4">{{ .Params.get_in_touch.office_hours_title }}</h3>
-        <table class="office-hours-table">
-          <tbody>
-            {{ range .Params.get_in_touch.office_hours }}
-            <tr>
-              <td>{{ .day }}</td>
-              <td class="text-end">{{ .time }}</td>
-            </tr>
-            {{ end }}
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="col-lg-6">
+      <!-- Contact Form (show first on mobile) -->
+      <div class="col-lg-6 order-1 order-lg-2"> <!-- 👈 changed order here -->
         <div class="contact-form-card">
           <h3 class="h4 fw-bold mb-4">Send us a Message</h3>
 
@@ -116,8 +85,38 @@
               Send Message <i class="fa fa-paper-plane ms-2"></i>
             </button>
           </form>
-
         </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6 order-2 order-lg-1"> <!-- 👈 changed order here -->
+        <p class="text-primary-custom fw-bold text-uppercase mb-2">Reach Out</p>
+        <h2 class="display-5 fw-bold mb-4 d-none d-lg-block">{{ .Params.get_in_touch.title }}</h2>
+        <p class="lead mb-5">{{ .Params.get_in_touch.content }}</p>
+
+        <div class="mb-5">
+          {{ range .Params.get_in_touch.contact_details }}
+          <div class="contact-info-block">
+            <i class="{{ .icon }}"></i>
+            <div>
+              <p class="mb-0 fw-bold">{{ .label }}</p>
+              <p class="mb-0">{{ .value }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        <h3 class="h4 fw-bold mb-4">{{ .Params.get_in_touch.office_hours_title }}</h3>
+        <table class="office-hours-table">
+          <tbody>
+            {{ range .Params.get_in_touch.office_hours }}
+            <tr>
+              <td>{{ .day }}</td>
+              <td class="text-end">{{ .time }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
       </div>
 
     </div>

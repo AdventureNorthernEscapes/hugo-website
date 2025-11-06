@@ -26,3 +26,4 @@ if (imageModal) {
     modalImage.src = imageUrl;
   });
 }
+

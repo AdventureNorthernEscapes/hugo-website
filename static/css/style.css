@@ -1058,3 +1058,52 @@ a {
 .stats-section p {
     color: rgba(255, 255, 255, 0.6) !important; /* Forces the label to always be light gray */
 }
+
+
+
+
+/* mobile header */
+body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar-toggler i {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+
+  @media (max-width: 991px) {
+    /* Group the theme and menu toggles on the same side */
+    .navbar .d-flex.align-items-center {
+      margin-left: auto;
+    }
+
+    /* Contact button styling inside collapsed menu */
+    .navbar-collapse .btn-custom-primary {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .navbar-dark .btn-outline-light{
+      margin-top:15px;
+    }
+
+    /* Adjust toggle buttons alignment */
+    #theme-toggle, .navbar-toggler {
+      border: none;
+      background: transparent;
+    }
+
+    #theme-toggle i, .navbar-toggler i {
+      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
