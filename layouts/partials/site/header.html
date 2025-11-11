@@ -2,10 +2,18 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-blue">
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo-white.png" alt="Adventure Northern Logo" class="navbar-logo">
-      </a>
-
+      <a class="navbar-brand d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start" href="/">
+  <picture>
+    <!-- Mobile version -->
+    <source srcset="/images/200_200_icon.svg" media="(max-width: 768px)">
+    <!-- Desktop version -->
+    <img src="/images/400_400_icon (1).svg" alt="Adventure Northern Logo" class="navbar-logo">
+  </picture>
+  <div class="navbar-logo-text mt-1">
+    <p class="logo-title mb-0">Adventure Northern</p>
+    <p class="logo-subtitle mb-0">ESCAPES</p>
+  </div>
+</a>
       <!-- Toggler -->
       <button
         class="navbar-toggler"

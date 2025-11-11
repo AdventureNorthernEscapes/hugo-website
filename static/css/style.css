@@ -76,14 +76,86 @@ a {
   text-decoration: none;
 }
 
-/* Header Logo */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=agrandir@500&display=swap');
+
+/* Logo styling */
 .navbar-logo {
-  /* Set a consistent size */
-  width: 90px; /* slightly larger for better presence */
+  width: 50px;  /* reduced for desktop */
   height: auto;
   object-fit: contain;
-  /* Remove the mobile aspect-ratio fix unless your logo is strictly square */
+  image-rendering: crisp-edges;
 }
+
+/* Text styling below logo */
+.navbar-logo-text .logo-title {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -3px;
+
+}
+
+.navbar-logo-text .logo-subtitle {
+  font-family: 'Agrandir', sans-serif;
+  font-size: 8px;
+  color: #cccccc;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+/* Desktop view */
+.navbar-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Responsive adjustments for mobile */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 6px;
+    margin-left: 0; /* ensure it sticks to the left */
+  }
+
+  /* Reduce logo size */
+  .navbar-logo {
+    width: 45px; 
+    height: auto;
+  }
+
+  /* Left align text beside the logo */
+  .navbar-logo-text {
+    text-align: left;
+  }
+
+  .navbar-logo-text .logo-title {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+
+  .navbar-logo-text .logo-subtitle {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+
+  /* Ensure the toggler (hamburger) stays on the right */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
 
 /* Ensure the background color is defined */
 .bg-dark-blue {
@@ -627,10 +699,82 @@ a {
 .site-footer ul li a:hover {
   color: var(--primary-color);
 }
-.site-footer .footer-logo {
-  width: 90px;
-  margin-bottom: 25px;
+/* ============================= */
+/*   Footer Logo Styling         */
+/* ============================= */
+
+/* Logo */
+.footer-logo {
+  width: 50px;  /* same as header desktop logo */
+  height: auto;
+  object-fit: contain;
+  image-rendering: crisp-edges;
+  display: block;
 }
+
+/* Text styling below logo */
+.footer-logo-text .logo-title {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -3px;
+}
+
+.footer-logo-text .logo-subtitle {
+  font-family: 'Agrandir', sans-serif;
+  font-size: 8px;
+  color: #cccccc;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+/* Align and layout for larger screens */
+.site-footer .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left align like header */
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* Paragraph and social icon alignment */
+.site-footer p,
+.site-footer .social-icons {
+  text-align: left;
+}
+
+/* ============================= */
+/*   Responsive (Mobile) Adjustments */
+/* ============================= */
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 45px; /* smaller logo for mobile */
+  }
+
+  .site-footer .col-lg-5 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo-text .logo-title {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+
+  .footer-logo-text .logo-subtitle {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+
+  .site-footer p,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
 .site-footer .social-icons a {
   color: var(--footer-text-color);
   margin-right: 20px;
@@ -752,7 +896,7 @@ a {
 
   .site-footer .social-icons {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .site-footer .contact-info-item {
     justify-content: left;
@@ -1080,10 +1224,7 @@ body {
 
 
   @media (max-width: 991px) {
-    /* Group the theme and menu toggles on the same side */
-    .navbar .d-flex.align-items-center {
-      margin-left: auto;
-    }
+  
 
     /* Contact button styling inside collapsed menu */
     .navbar-collapse .btn-custom-primary {
