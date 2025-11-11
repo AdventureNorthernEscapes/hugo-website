@@ -96,6 +96,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-top: -3px;
+  font-weight: 600;
 
 }
 
@@ -720,6 +721,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-top: -3px;
+  font-weight: 600;
 }
 
 .footer-logo-text .logo-subtitle {
