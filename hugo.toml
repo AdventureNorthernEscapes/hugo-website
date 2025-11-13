@@ -2,7 +2,7 @@ baseURL = "https://adventurenorthernescapes.github.io/hugo-website/"
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
-title = 'Adventure Northen'
+title = 'Adventure Northern'
 
 [menu]
   [[menu.main]]

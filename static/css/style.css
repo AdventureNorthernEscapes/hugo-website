@@ -163,6 +163,16 @@ a {
     background-color: #1a1e2b !important; /* Use a specific dark blue, adjust as needed */
 }
 
+.contact-form-card .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.4) !important; /* adjust the last value for lighter or darker */
+  opacity: 1; /* ensures consistent appearance across browsers */
+}
+
+/* Optional: if your site has a dark background */
+body.dark-mode .contact-form-card .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.329);
+}
+
 
 
 
