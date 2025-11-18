@@ -1260,3 +1260,26 @@ body {
       font-size: 1.4rem;
     }
   }
+
+
+  
+/* Ensure main image maintains consistent shape */
+.image-gallery .main-image {
+  width: 100%;
+  height: 350px;          /* adjust as desired */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Thumbnail images same height */
+.image-gallery .thumb-image {
+  width: 100%;
+  height: 170px;          /* half of main height works nicely */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Remove unwanted spacing from the grid container */
+.image-gallery .row {
+  margin: 0;
+}
