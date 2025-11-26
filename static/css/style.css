@@ -1283,3 +1283,11 @@ body {
 .image-gallery .row {
   margin: 0;
 }
+
+
+
+
+/* removing the expirenction section in the about us page */
+.experience-stats{
+  display: none;
+}
