@@ -1291,3 +1291,51 @@ body {
 .experience-stats{
   display: none;
 }
+
+
+
+
+/* final mobile */
+@media (max-width: 768px) {
+
+  /* Hard stop horizontal scroll */
+  html, body {
+    max-width: 100%;
+  }
+
+  /* Prevent bootstrap container overflow */
+  .navbar .container {
+    max-width: 100%;
+  }
+
+  /* Brand MUST be allowed to shrink */
+  .navbar-brand {
+    max-width: 60%;
+    min-width: 0;
+  }
+
+  /* Logo image constraint */
+  .navbar-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Logo text must never force width */
+  .navbar-logo-text {
+    min-width: 0;
+  }
+
+  .logo-title,
+  .logo-subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Collapsed menu width fix */
+  .navbar-collapse {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
