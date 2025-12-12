@@ -1,39 +1,40 @@
 /* --- Variables & Global Styles --- */
 :root {
-    /* Light Theme */
-    --primary-color: #c0a87a;
-    --dark-blue: #232b3e;
-    --text-color: #555;
-    --text-muted-color: #6c757d;
-    --bg-main: #ffffff;      /* Main body background for light mode */
-    --bg-light: #f9f9f9;
-    --card-bg: #ffffff;
-    --border-color: #e0e0e0;
-    --heading-color: #232b3e;
-    --btn-primary-text: #ffffff;
-    --footer-text-color: #ccc;
-    --input-bg-color: #f0f0f0;
-    --input-border-color: #e0e0e0;
-    --input-text-color: #333;
+  /* Light Theme */
+  --primary-color: #c0a87a;
+  --dark-blue: #232b3e;
+  --text-color: #555;
+  --text-muted-color: #6c757d;
+  --bg-main: #ffffff; /* Main body background for light mode */
+  --bg-light: #f9f9f9;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --heading-color: #232b3e;
+  --btn-primary-text: #ffffff;
+  --footer-text-color: #ccc;
+  --input-bg-color: #f0f0f0;
+  --input-border-color: #e0e0e0;
+  --input-text-color: #333;
 }
 
 /* Dark Theme Overrides */
 [data-bs-theme="dark"] {
-    --text-color: #eaf2f9;
-    --text-muted-color: #89929d;
-    --bg-main: #1e2639;      /* Main body background for dark mode */
-    --bg-light: #2c354a;
-    --card-bg: #2a3348;
-    --border-color: #3b455b;
-    --heading-color: #ffffff;
-    --footer-text-color: #adb5bd;
-    --input-bg-color: #3b455b;
-    --input-border-color: #4a546d;
-    --input-text-color: #ffffff;
+  --text-color: #eaf2f9;
+  --text-muted-color: #89929d;
+  --bg-main: #1e2639; /* Main body background for dark mode */
+  --bg-light: #2c354a;
+  --card-bg: #2a3348;
+  --border-color: #3b455b;
+  --heading-color: #ffffff;
+  --footer-text-color: #adb5bd;
+  --input-bg-color: #3b455b;
+  --input-border-color: #4a546d;
+  --input-text-color: #ffffff;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* UPDATED FONT */
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif; /* UPDATED FONT */
   margin: 0;
   color: var(--text-color);
   line-height: 1.6;
@@ -49,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-        font-family: 'Playfair Display', Georgia, serif; /* UPDATED FONT */
+  font-family: "Playfair Display", Georgia, serif; /* UPDATED FONT */
 
   font-weight: 600; /* Slightly bolder for headings */
   color: var(--heading-color);
@@ -63,7 +64,7 @@ h6 {
 .display-4,
 .display-5,
 .display-6 {
-        font-family: 'Playfair Display', Georgia, serif; /* UPDATED FONT */
+  font-family: "Playfair Display", Georgia, serif; /* UPDATED FONT */
 
   color: var(--heading-color);
   font-weight: 700; /* Extra bold for display headings */
@@ -77,12 +78,12 @@ a {
 }
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=agrandir@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=agrandir@500&display=swap");
 
 /* Logo styling */
 .navbar-logo {
-  width: 50px;  /* reduced for desktop */
+  width: 50px; /* reduced for desktop */
   height: auto;
   object-fit: contain;
   image-rendering: crisp-edges;
@@ -90,18 +91,17 @@ a {
 
 /* Text styling below logo */
 .navbar-logo-text .logo-title {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 10px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   margin-top: -3px;
   font-weight: 600;
-
 }
 
 .navbar-logo-text .logo-subtitle {
-  font-family: 'Agrandir', sans-serif;
+  font-family: "Agrandir", sans-serif;
   font-size: 8px;
   color: #cccccc;
   letter-spacing: 0.5px;
@@ -132,7 +132,7 @@ a {
 
   /* Reduce logo size */
   .navbar-logo {
-    width: 45px; 
+    width: 45px;
     height: auto;
   }
 
@@ -157,14 +157,18 @@ a {
   }
 }
 
-
 /* Ensure the background color is defined */
 .bg-dark-blue {
-    background-color: #1a1e2b !important; /* Use a specific dark blue, adjust as needed */
+  background-color: #1a1e2b !important; /* Use a specific dark blue, adjust as needed */
 }
 
 .contact-form-card .form-control::placeholder {
-  color: rgba(0, 0, 0, 0.4) !important; /* adjust the last value for lighter or darker */
+  color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ) !important; /* adjust the last value for lighter or darker */
   opacity: 1; /* ensures consistent appearance across browsers */
 }
 
@@ -172,9 +176,6 @@ a {
 body.dark-mode .contact-form-card .form-control::placeholder {
   color: rgba(255, 255, 255, 0.329);
 }
-
-
-
 
 /* --- Utility Classes --- */
 .section-padding {
@@ -252,8 +253,6 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 /* .navbar-brand img {
   width: 66px;
 }  */
-
-
 
 /* Logo size adjusted */
 .navbar-nav .nav-link {
@@ -383,26 +382,26 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 
 /* --- Meet the Team - Collaboration Gallery --- */
 .collaboration-gallery img {
-    border-radius: 8px;
-    object-fit: cover; /* Prevents images from stretching */
-    width: 100%;
+  border-radius: 8px;
+  object-fit: cover; /* Prevents images from stretching */
+  width: 100%;
 }
 
 .collaboration-gallery .tall-image {
-    height: 450px; /* Adjust this value if needed */
+  height: 450px; /* Adjust this value if needed */
 }
 
 .collaboration-gallery .short-image {
-    height: 217px; /* Roughly half of the tall image height, minus the gap */
+  height: 217px; /* Roughly half of the tall image height, minus the gap */
 }
 
 @media (max-width: 767.98px) {
-    .collaboration-gallery .tall-image {
-        height: 300px;
-    }
-    .collaboration-gallery .short-image {
-        height: 142px;
-    }
+  .collaboration-gallery .tall-image {
+    height: 300px;
+  }
+  .collaboration-gallery .short-image {
+    height: 142px;
+  }
 }
 
 /* --- Pathways Section --- */
@@ -579,7 +578,7 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 .team-member-card img {
   height: 300px; /* Consistent image height */
   object-fit: cover;
-  width:100%;
+  width: 100%;
   object-position: center 1px;
 }
 .team-member-card .card-body {
@@ -716,7 +715,7 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 
 /* Logo */
 .footer-logo {
-  width: 50px;  /* same as header desktop logo */
+  width: 50px; /* same as header desktop logo */
   height: auto;
   object-fit: contain;
   image-rendering: crisp-edges;
@@ -725,7 +724,7 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 
 /* Text styling below logo */
 .footer-logo-text .logo-title {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 10px;
   color: #ffffff;
   text-transform: uppercase;
@@ -735,7 +734,7 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 }
 
 .footer-logo-text .logo-subtitle {
-  font-family: 'Agrandir', sans-serif;
+  font-family: "Agrandir", sans-serif;
   font-size: 8px;
   color: #cccccc;
   letter-spacing: 0.5px;
@@ -915,8 +914,6 @@ body.dark-mode .contact-form-card .form-control::placeholder {
   }
 }
 
-
-
 /* --- Services Page Specific --- */
 .services-section .service-block:first-child {
   margin-top: 0 !important;
@@ -998,27 +995,29 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 /* --- Case Studies Gallery - Aspect Ratio & Uniformity Fix --- */
 
 .gallery-image-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px; /* Apply rounding to the container */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    aspect-ratio: 4 / 3; /* The magic property! Creates a 4:3 box */
-    background-color: var(--border-color); /* Shows a placeholder color while image loads */
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px; /* Apply rounding to the container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4 / 3; /* The magic property! Creates a 4:3 box */
+  background-color: var(
+    --border-color
+  ); /* Shows a placeholder color while image loads */
 }
 
 .gallery-image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This crops the image to fit without stretching */
-    transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This crops the image to fit without stretching */
+  transition: transform 0.3s ease;
 }
 
 .gallery-image-wrapper:hover img {
-    transform: scale(1.05); /* Adds a subtle zoom effect on hover */
+  transform: scale(1.05); /* Adds a subtle zoom effect on hover */
 }
 .case-study-title {
   position: relative;
@@ -1030,57 +1029,57 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 }
 /* Re-styling your "Project Process" to look like the "Project Details" design */
 .project-process-wrapper .project-process-title {
-    font-family: 'Inter', sans-serif; /* Use sans-serif font */
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--heading-color);
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: none; /* Remove the bottom border */
-    padding-bottom: 0;
-    text-align: left; /* Align to the left */
+  font-family: "Inter", sans-serif; /* Use sans-serif font */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none; /* Remove the bottom border */
+  padding-bottom: 0;
+  text-align: left; /* Align to the left */
 }
 .project-process-wrapper .project-process-title i {
-    display: none; /* Hide the chevron icon from the old design */
+  display: none; /* Hide the chevron icon from the old design */
 }
 .process-card {
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    height: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
 }
 .process-card-number {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: 700;
-    font-size: 1.1rem; /* Adjusted font size */
-    min-width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem; /* Adjusted font size */
+  min-width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
 .process-card-title {
-    font-family: 'Inter', sans-serif; /* Use sans-serif font */
-    font-size: 0.9rem; /* Smaller size for the label */
-    font-weight: 700;
-    color: var(--heading-color);
-    margin-bottom: 3px;
-    display: block;
-    text-transform: none; /* Not uppercase */
+  font-family: "Inter", sans-serif; /* Use sans-serif font */
+  font-size: 0.9rem; /* Smaller size for the label */
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 3px;
+  display: block;
+  text-transform: none; /* Not uppercase */
 }
 .process-card-description {
-    font-family: 'Inter', sans-serif; /* Use sans-serif font */
-    font-size: 1rem; /* Larger size for the value */
-    color: var(--text-color);
-    margin-bottom: 0;
-    font-weight: 400; /* Regular weight */
+  font-family: "Inter", sans-serif; /* Use sans-serif font */
+  font-size: 1rem; /* Larger size for the value */
+  color: var(--text-color);
+  margin-bottom: 0;
+  font-weight: 400; /* Regular weight */
 }
 
 /* --- Case Studies Single (Detail) Page --- */
@@ -1094,52 +1093,53 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 /* --- Case Studies Detail Page - Single Column Layout --- */
 
 .project-content {
-    max-width: 800px; /* Constrains text width for better readability */
-    margin: 0 auto;   /* Centers the text block */
+  max-width: 800px; /* Constrains text width for better readability */
+  margin: 0 auto; /* Centers the text block */
 }
 .project-content p {
-    font-size: 1.1rem;
-    line-height: 1.8; /* More vertical spacing for text */
+  font-size: 1.1rem;
+  line-height: 1.8; /* More vertical spacing for text */
 }
 
 .project-gallery-wrapper {
-    border-top: 1px solid var(--border-color); /* Adds a nice visual separator */
+  border-top: 1px solid var(--border-color); /* Adds a nice visual separator */
 }
 
 .project-gallery-title {
-    font-weight: 700;
-    color: var(--heading-color);
+  font-weight: 700;
+  color: var(--heading-color);
 }
 
 .project-gallery a {
-    display: block;
-    overflow: hidden;
-    border-radius: 8px;
-    aspect-ratio: 4 / 3; /* Creates a uniform 4:3 aspect ratio for all images */
-    background-color: var(--border-color); /* Placeholder color while images load */
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 4 / 3; /* Creates a uniform 4:3 aspect ratio for all images */
+  background-color: var(
+    --border-color
+  ); /* Placeholder color while images load */
 }
 
 .project-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crops images to fit the 4:3 box without stretching */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops images to fit the 4:3 box without stretching */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-gallery a:hover img {
-    transform: scale(1.05); /* Adds a subtle zoom effect on hover */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transform: scale(1.05); /* Adds a subtle zoom effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Modal Responsiveness */
 .modal-image {
-    width: 100%;
-    height: auto;
-    max-height: 90vh; /* Ensures the modal image fits vertically on any screen */
-    object-fit: contain; /* Shows the full image inside the modal without cropping */
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-height: 90vh; /* Ensures the modal image fits vertically on any screen */
+  object-fit: contain; /* Shows the full image inside the modal without cropping */
+  border-radius: 8px;
 }
-
 
 /* --- Rule for Dark Background Sections (Corrected) --- */
 .bg-dark-blue h1,
@@ -1153,120 +1153,134 @@ body.dark-mode .contact-form-card .form-control::placeholder {
 .bg-dark-blue .display-4,
 .bg-dark-blue .display-5,
 .bg-dark-blue .display-6 {
-    color: white !important; /* Forces the color to always be white */
+  color: white !important; /* Forces the color to always be white */
 }
-
 
 /* --- Case Studies Gallery - Fixed Height --- */
 .case-studies-list .g-4.mt-4 img {
-    height: 250px; /* You can change this value to your desired height */
-    width: 100%;
-    object-fit: cover; /* This prevents the image from stretching or distorting */
+  height: 250px; /* You can change this value to your desired height */
+  width: 100%;
+  object-fit: cover; /* This prevents the image from stretching or distorting */
 }
 
-
 @media (max-width: 767.98px) {
-    .case-studies-list .g-4.mt-4 img {
-        height: 200px; /* A shorter height for mobile screens */
-    }
+  .case-studies-list .g-4.mt-4 img {
+    height: 200px; /* A shorter height for mobile screens */
+  }
 }
 
 /* --- Modal Enhancements --- */
 
 /* Blurred Backdrop for Modals */
 .modal.show .modal-backdrop {
-    backdrop-filter: blur(8px); /* Blur effect for the background */
-    -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
-    background-color: rgba(0, 0, 0, 0.7); /* Darker, semi-transparent background */
-    opacity: 1; /* Ensure opacity is not overridden to make blur visible */
+  backdrop-filter: blur(8px); /* Blur effect for the background */
+  -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darker, semi-transparent background */
+  opacity: 1; /* Ensure opacity is not overridden to make blur visible */
 }
 
 /* Ensure modal content is properly styled for the dark theme */
 #imageModal .modal-content {
-    background-color: rgba(0, 0, 0, 0.5) !important; /* Slightly transparent dark background for the modal image itself */
-    border: none; /* No border */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ) !important; /* Slightly transparent dark background for the modal image itself */
+  border: none; /* No border */
 }
 
 /* Modal header for close button */
 #imageModal .modal-header {
-    padding: 1rem 1rem 0 1rem; /* Padding for the close button */
+  padding: 1rem 1rem 0 1rem; /* Padding for the close button */
 }
 
 /* --- CTA & Stats Section - Final Theme Fix --- */
 
 .cta-section {
-    background-color: var(--dark-blue); /* Guarantees dark background */
+  background-color: var(--dark-blue); /* Guarantees dark background */
 }
 .cta-section h2,
 .cta-section .lead {
-    color: white; /* Forces the heading to always be white */
+  color: white; /* Forces the heading to always be white */
 }
 .cta-section .lead {
-    color: rgba(255, 255, 255, 0.8); /* A slightly dimmer white for the paragraph */
+  color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* A slightly dimmer white for the paragraph */
 }
 
 .stats-section {
-    background-color: var(--dark-blue); /* Guarantees dark background */
+  background-color: var(--dark-blue); /* Guarantees dark background */
 }
 .stats-section h3 {
-    color: var(--primary-color); /* Forces the number to always be the gold color */
+  color: var(
+    --primary-color
+  ); /* Forces the number to always be the gold color */
 }
 .stats-section p {
-    color: rgba(255, 255, 255, 0.6) !important; /* Forces the label to always be light gray */
+  color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ) !important; /* Forces the label to always be light gray */
 }
-
-
-
 
 /* mobile header */
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.navbar {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.navbar-toggler i {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 991px) {
+  /* Contact button styling inside collapsed menu */
+  .navbar-collapse .btn-custom-primary {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
   }
 
-  .navbar {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+  .navbar-dark .btn-outline-light {
+    margin-top: 15px;
   }
 
+  /* Adjust toggle buttons alignment */
+  #theme-toggle,
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  }
+
+  #theme-toggle i,
   .navbar-toggler i {
-    font-size: 1.6rem;
     color: #fff;
-    margin-bottom: 4px;
+    font-size: 1.4rem;
   }
+}
 
-
-  @media (max-width: 991px) {
-  
-
-    /* Contact button styling inside collapsed menu */
-    .navbar-collapse .btn-custom-primary {
-      width: 100%;
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .navbar-dark .btn-outline-light{
-      margin-top:15px;
-    }
-
-    /* Adjust toggle buttons alignment */
-    #theme-toggle, .navbar-toggler {
-      border: none;
-      background: transparent;
-    }
-
-    #theme-toggle i, .navbar-toggler i {
-      color: #fff;
-      font-size: 1.4rem;
-    }
-  }
-
-
-  
 /* Ensure main image maintains consistent shape */
 .image-gallery .main-image {
   width: 100%;
-  height: 350px;          /* adjust as desired */
+  height: 350px; /* adjust as desired */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -1274,7 +1288,7 @@ body {
 /* Thumbnail images same height */
 .image-gallery .thumb-image {
   width: 100%;
-  height: 170px;          /* half of main height works nicely */
+  height: 170px; /* half of main height works nicely */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -1284,37 +1298,10 @@ body {
   margin: 0;
 }
 
-
-
-
 /* removing the expirenction section in the about us page */
-.experience-stats{
+.experience-stats {
   display: none;
 }
 
-
-
-
 /* final mobile */
-@media (max-width: 768px){
-  .navbar, .navbar .container, .navbar-collapse{
-    max-width: 100%;
-    overflow-x: clip;
-  }
 
-  .navbar-brand{
-    max-width: 65%;
-    min-width: 0;
-  }
-
-  .logo-title, .logo-subtitle{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .navbar-logo{
-    max-width: 100%;
-    height: auto;
-  }
-}
