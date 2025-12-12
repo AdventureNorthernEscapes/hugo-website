@@ -1,5 +1,7 @@
 ---
 title: "Investment Homepage"
+description: "Adventure Northern Escapes is a UK property investment and management company transforming real estate into quality homes, holiday lets, and long-term value."
+
 
 # --- Hero Section ---
 hero:

@@ -1,6 +1,8 @@
 ---
 title: "Our Services"
 layout: "services"
+description: "Explore our UK property investment strategies, management services, and joint venture opportunities."
+
 
 hero:
   subtitle: "Our Services"

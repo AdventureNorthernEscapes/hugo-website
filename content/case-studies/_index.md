@@ -1,6 +1,8 @@
 ---
 title: "Case Studies"
 layout: "case-studies"
+description: "A detailed case study showcasing the refurbishment and transformation of The Celestial Cabin property."
+
 
 hero:
   subtitle: "Our Portfolio"
