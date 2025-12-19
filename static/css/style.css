@@ -1303,5 +1303,145 @@ body {
   display: none;
 }
 
-/* final mobile */
+/* ============================= */
+/*   MOBILE RESPONSIVENESS FIXES  */
+/* ============================= */
+
+/* Prevent horizontal scrolling on mobile devices */
+@media (max-width: 768px) {
+  /* Apply overflow hidden to html and body for mobile */
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Fix navbar container to prevent overflow */
+  .navbar .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Fix navbar brand to prevent flex shrinking issues */
+  .navbar-brand {
+    flex-shrink: 0 !important; /* Prevent shrinking */
+    max-width: calc(100% - 60px); /* Leave space for hamburger menu */
+    margin-right: auto;
+  }
+  
+  /* Ensure navbar toggler stays in position */
+  .navbar-toggler {
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  
+  /* Fix logo container to prevent overflow */
+  .navbar-logo {
+    max-width: 45px;
+    flex-shrink: 0;
+  }
+  
+  /* Fix logo text container */
+  .navbar-logo-text {
+    max-width: calc(100% - 50px);
+    overflow: hidden;
+  }
+  
+  .navbar-logo-text .logo-title,
+  .navbar-logo-text .logo-subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Ensure all containers are properly constrained */
+  .container,
+  .container-fluid {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Fix any absolute or fixed positioned elements */
+  .navbar.fixed-top {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  /* Ensure hero sections don't overflow */
+  .hero-section {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+  .hero-section .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Fix any row elements that might cause overflow */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix collapsed navbar menu */
+  .navbar-collapse {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure buttons in navbar don't cause overflow */
+  .navbar-collapse .btn-custom-primary,
+  .navbar-collapse .btn-outline-light {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+/* Additional fixes for very small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+  /* Further constrain navbar brand on very small screens */
+  .navbar-brand {
+    max-width: calc(100% - 50px);
+  }
+  
+  /* Reduce logo size slightly on very small screens */
+  .navbar-logo {
+    width: 40px;
+    max-width: 40px;
+  }
+  
+  /* Adjust font sizes to prevent overflow */
+  .navbar-logo-text .logo-title {
+    font-size: 9px;
+  }
+  
+  .navbar-logo-text .logo-subtitle {
+    font-size: 7px;
+  }
+  
+  /* Ensure container padding is adequate */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 
