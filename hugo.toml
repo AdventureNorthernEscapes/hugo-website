@@ -33,3 +33,25 @@ title = 'Adventure Northern'
   contact_phone = "+44 20 4592 1076"
   contact_address = "C/O Rodliffe Accounting, Level 37, 1 Canada Square, London, United Kingdom, E14 5AA"
 
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff]
+  [minify.tdewolff.html]
+    keepConditionalComments = true
+    keepDefaultAttrVals = true
+    keepDocumentTags = true
+    keepEndTags = true
+    keepQuotes = true
+    keepWhitespace = false
+  [minify.tdewolff.css]
+    keepCSS2 = true
+    precision = 0
+  [minify.tdewolff.js]
+    keepVarNames = false
+    precision = 0
+  [minify.tdewolff.json]
+    precision = 0
+  [minify.tdewolff.xml]
+    keepWhitespace = false
