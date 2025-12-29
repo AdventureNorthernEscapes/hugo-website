@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light"> 
+<html lang="en" data-bs-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,43 @@
   <!-- ✅ SEO-friendly dynamic title -->
   <title>
     {{- if .IsHome -}}
-      {{ .Site.Title }} | UK Property Investment, Management & Holiday Escapes
+    {{ .Site.Title }} | UK Property Investment, Management & Holiday Escapes
     {{- else -}}
-      {{ .Title }} | {{ .Site.Title }}
+    {{ .Title }} | {{ .Site.Title }}
     {{- end -}}
   </title>
 
   <!-- ✅ Meta description (NEVER empty) -->
   <meta name="description"
-        content="{{ with .Params.description }}{{ . }}{{ else }}Adventure Northern Escapes is a UK-based property investment and management company creating quality homes, holiday lets, and long-term value.{{ end }}">
+    content="{{ with .Params.description }}{{ . }}{{ else }}Adventure Northern Escapes is a UK-based property investment and management company creating quality homes, holiday lets, and long-term value.{{ end }}">
 
   <meta name="robots" content="index, follow">
 
-  <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}">
+  <link rel="icon" type="image/png" href="{{ " images/favicon.png" | relURL }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  {{ $style := resources.Get "css/style.css" | resources.Minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="/css/style.css">
 
   <script src="/js/theme.js" defer></script>
 </head>
 
 <body>
-    {{ partial "site/header.html" . }}
-    
-    <main>
-        {{ block "main" . }}{{ end }}
-    </main>
+  {{ partial "site/header.html" . }}
 
-    {{ partial "site/footer.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  {{ partial "site/footer.html" . }}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
