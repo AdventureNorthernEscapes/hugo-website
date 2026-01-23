@@ -1,7 +1,7 @@
 ---
 title: "About Us"
 layout: "about"
-description: "Learn about Adventure Northern Escapes, our mission, values, and approach to property investment and management across the UK."
+description: "Learn about a Adventure Northern Escapes, our mission, values, and approach to property investment and management across the UK."
 
 
 # --- Hero Section ---
