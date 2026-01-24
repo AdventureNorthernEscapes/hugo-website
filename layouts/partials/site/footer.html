@@ -1,49 +1,50 @@
 <footer class="site-footer bg-dark-blue text-light section-padding pt-5 pb-4">
-    <div class="container">
-        <div class="row gy-5">
-            <div class="col-lg-5 col-md-12">
-              <div class="d-flex align-items-center flex-column">
-                <img src="/images/400_400_icon (1).svg" class="footer-logo " alt="Logo">
-                <div class="footer-logo-text mt-1">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-5 col-md-12">
+        <div class="d-flex align-items-center flex-column">
+          <img src="/images/400_400_icon (1).svg" class="footer-logo " alt="Logo" loading="lazy" decoding="async">
+          <div class="footer-logo-text mt-1">
             <p class="logo-title mb-0">Adventure Northern</p>
             <p class="logo-subtitle mb-0">ESCAPES</p>
           </div>
-          </div>
-                <p class="pe-lg-5">Creating generational wealth through strategic real estate investments and collaborative partnerships.</p>
-                <div class="social-icons ">
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="mb-4">Navigation</h5>
-                <ul class="list-unstyled">
-                    {{ range .Site.Menus.main }}
-                    <li class="mb-2"><a href="{{ .URL }}" class="text-decoration-none text-light">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 text-md-start text-start">
-  <h5 class="mb-4">Contact Information</h5>
-  <ul class="list-unstyled">
-    <li class="contact-info-item">
-      <i class="fa fa-phone"></i>
-      <span>{{ .Site.Params.contact_phone }}</span>
-    </li>
-    <li class="contact-info-item">
-      <i class="fa fa-envelope"></i>
-      <span>{{ .Site.Params.contact_email }}</span>
-    </li>
-    <li class="contact-info-item">
-      <i class="fa fa-map-marker-alt"></i>
-      <span>{{ .Site.Params.contact_address }}</span>
-    </li>
-  </ul>
-</div>
-
-        <div class="footer-bottom mt-5">
-             &copy; {{ now.Format "2006" }} {{ .Site.Title }}. All Rights Reserved.
         </div>
+        <p class="pe-lg-5">Creating generational wealth through strategic real estate investments and collaborative
+          partnerships.</p>
+        <div class="social-icons ">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="mb-4">Navigation</h5>
+        <ul class="list-unstyled">
+          {{ range .Site.Menus.main }}
+          <li class="mb-2"><a href="{{ .URL }}" class="text-decoration-none text-light">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 text-md-start text-start">
+        <h5 class="mb-4">Contact Information</h5>
+        <ul class="list-unstyled">
+          <li class="contact-info-item">
+            <i class="fa fa-phone"></i>
+            <span>{{ .Site.Params.contact_phone }}</span>
+          </li>
+          <li class="contact-info-item">
+            <i class="fa fa-envelope"></i>
+            <span>{{ .Site.Params.contact_email }}</span>
+          </li>
+          <li class="contact-info-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <span>{{ .Site.Params.contact_address }}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom mt-5">
+        &copy; {{ now.Format "2006" }} {{ .Site.Title }}. All Rights Reserved.
+      </div>
     </div>
 </footer>

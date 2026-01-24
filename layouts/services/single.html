@@ -1,10 +1,10 @@
 {{ define "main" }}
 <section class="hero-section" style="background-image: url('{{ .Params.hero.background_image }}'); height: 50vh;">
-    <div class="hero-overlay"></div>
-    <div class="container position-relative text-center py-5" style="padding-top: 100px;">
-        <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>
-        <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
-    </div>
+  <div class="hero-overlay"></div>
+  <div class="container position-relative text-center py-5" style="padding-top: 100px;">
+    <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>
+    <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
+  </div>
 </section>
 
 <section class="services-section section-padding">
@@ -12,7 +12,7 @@
     {{ range $index, $element := .Params.services }}
     <div class="row g-5 align-items-center service-block {{ if ne $index 0 }}mt-5 pt-5{{ end }}">
       <div class="col-lg-6 {{ if modBool $index 2 }}order-lg-2{{ end }}">
-        <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-lg">
+        <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded shadow-lg" loading="lazy" decoding="async">
       </div>
       <div class="col-lg-6">
         <div class="service-content">
@@ -36,10 +36,10 @@
 </section>
 
 <section class="section-padding bg-dark-blue  text-center">
-    <div class="container">
-        <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.cta.title }}</p>
-        <h2 class=" fw-bold mb-4">{{ .Params.cta.subtitle }}</h2>
-        <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg">{{ .Params.cta.button_text }}</a>
-    </div>
+  <div class="container">
+    <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.cta.title }}</p>
+    <h2 class=" fw-bold mb-4">{{ .Params.cta.subtitle }}</h2>
+    <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg">{{ .Params.cta.button_text }}</a>
+  </div>
 </section>
 {{ end }}

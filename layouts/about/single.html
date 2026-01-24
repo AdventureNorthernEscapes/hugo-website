@@ -1,13 +1,7 @@
 {{ define "main" }}
-<section
-  class="hero-section"
-  style="background-image: url('{{ .Params.hero.background_image }}'); min-height: 50vh;"
->
+<section class="hero-section" style="background-image: url('{{ .Params.hero.background_image }}'); min-height: 50vh;">
   <div class="hero-overlay"></div>
-  <div
-    class="container position-relative text-center py-5"
-    style="padding-top: 100px"
-  >
+  <div class="container position-relative text-center py-5" style="padding-top: 100px">
     <h1 class="display-2 fw-bold">{{ .Params.hero.title }}</h1>
   </div>
 </section>
@@ -43,25 +37,16 @@
     <div class="row g-5 align-items-center">
       <div class="col-lg-6 order-lg-2">
         <div class="image-gallery grid gap-3">
-          <img
-            src="{{ index .Params.generational_wealth.images 0 }}"
-            alt="Building Wealth Together Main"
-            class="img-fluid main-image"
-          />
+          <img src="{{ index .Params.generational_wealth.images 0 }}" alt="Building Wealth Together Main"
+            class="img-fluid main-image" loading="lazy" decoding="async" />
           <div class="row g-3 mt-0">
             <div class="col-6">
-              <img
-                src="{{ index .Params.generational_wealth.images 1 }}"
-                alt="Building Wealth Together Thumb 1"
-                class="img-fluid thumb-image"
-              />
+              <img src="{{ index .Params.generational_wealth.images 1 }}" alt="Building Wealth Together Thumb 1"
+                class="img-fluid thumb-image" loading="lazy" decoding="async" />
             </div>
             <div class="col-6">
-              <img
-                src="{{ index .Params.generational_wealth.images 2 }}"
-                alt="Building Wealth Together Thumb 2"
-                class="img-fluid thumb-image"
-              />
+              <img src="{{ index .Params.generational_wealth.images 2 }}" alt="Building Wealth Together Thumb 2"
+                class="img-fluid thumb-image" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -76,11 +61,8 @@
         <p class="lead mb-4">
           {{ .Params.generational_wealth.content | safeHTML }}
         </p>
-        <a
-          href="{{ .Params.generational_wealth.button_url }}"
-          class="btn btn-custom-primary btn-lg"
-          >{{ .Params.generational_wealth.button_text }}</a
-        >
+        <a href="{{ .Params.generational_wealth.button_url }}" class="btn btn-custom-primary btn-lg">{{
+          .Params.generational_wealth.button_text }}</a>
       </div>
     </div>
   </div>
@@ -91,25 +73,16 @@
     <div class="row g-5 align-items-center">
       <div class="col-lg-6">
         <div class="image-gallery grid gap-3">
-          <img
-            src="{{ index .Params.experience.images 0 }}"
-            alt="Experience You Can Trust Main"
-            class="img-fluid main-image"
-          />
+          <img src="{{ index .Params.experience.images 0 }}" alt="Experience You Can Trust Main"
+            class="img-fluid main-image" loading="lazy" decoding="async" />
           <div class="row g-3 mt-0">
             <div class="col-6">
-              <img
-                src="{{ index .Params.experience.images 1 }}"
-                alt="Experience You Can Trust Thumb 1"
-                class="img-fluid thumb-image"
-              />
+              <img src="{{ index .Params.experience.images 1 }}" alt="Experience You Can Trust Thumb 1"
+                class="img-fluid thumb-image" loading="lazy" decoding="async" />
             </div>
             <div class="col-6">
-              <img
-                src="{{ index .Params.experience.images 2 }}"
-                alt="Experience You Can Trust Thumb 2"
-                class="img-fluid thumb-image"
-              />
+              <img src="{{ index .Params.experience.images 2 }}" alt="Experience You Can Trust Thumb 2"
+                class="img-fluid thumb-image" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -133,9 +106,7 @@
 <section class="section-padding bg-dark-blue  text-center">
   <div class="container">
     <h2 class=" fw-bold mb-4">{{ .Params.cta.title }}</h2>
-    <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg"
-      >{{ .Params.cta.button_text }}</a
-    >
+    <a href="{{ .Params.cta.button_url }}" class="btn btn-custom-primary btn-lg">{{ .Params.cta.button_text }}</a>
   </div>
 </section>
 {{ end }}

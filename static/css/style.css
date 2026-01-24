@@ -86,9 +86,7 @@ a {
   text-decoration: none;
 }
 
-/* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
-@import url("https://api.fontshare.com/v2/css?f[]=agrandir@500&display=swap");
+/* Fonts are now loaded via deferred preload in baseof.html for better performance */
 
 /* Logo styling */
 .navbar-logo {
