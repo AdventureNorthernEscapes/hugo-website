@@ -17,9 +17,9 @@ case_studies:
   - title: "Lakeside Manor Revival"
     hero_image: "/images/case-1-hero.jpg"
     gallery_images:
-      - "/hugo-website/images/case-1-thumb-1.jpg"
-      - "/hugo-website/images/case-1-thumb-2.jpg"
-      - "/hugo-website/images/case-1-thumb-3.jpg"
+      - "/images/case-1-gallery-1.jpg"
+      - "/images/case-1-gallery-2.jpg"
+      - "/images/case-1-gallery-3.jpg"
     details:
       - label: "Project Type"
         value: "Residential Renovation"
@@ -35,11 +35,11 @@ case_studies:
         value: "Sold for 25% above asking price."
 
   - title: "Mountain View Estate Development"
-    hero_image: "/case-2-gallery-7.jpg"
+    hero_image: "/images/case-2-gallery-7.jpg"
     gallery_images:
-      - "/hugo-website/images/case-2-thumb-1.jpg"
-      - "/hugo-website/images/case-2-thumb-2.jpg"
-      - "/hugo-website/images/case-2-thumb-3.jpg"
+      - "/images/case-2-gallery-1.jpg"
+      - "/images/case-2-gallery-2.jpg"
+      - "/images/case-2-gallery-3.jpg"
     details:
       - label: "Project Type"
         value: "New Build Development"
@@ -55,11 +55,11 @@ case_studies:
         value: "All units sold off-plan before completion."
 
   - title: "Coastal Haven Transformation"
-    hero_image: "/images/case-3-gallery-7.jpg"
+    hero_image: "/images/case-3-gallery-7.webp"
     gallery_images:
-      - "/hugo-website/images/case-3-thumb-1.jpg"
-      - "/hugo-website/images/case-3-thumb-2.jpg"
-      - "/hugo-website/images/case-3-thumb-3.jpg"
+      - "/images/case-3-gallery-1.jpg"
+      - "/images/case-3-gallery-2.webp"
+      - "/images/case-3-gallery-3.webp"
     details:
       - label: "Project Type"
         value: "Luxury Flip"

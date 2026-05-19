@@ -1,4 +1,4 @@
-baseURL = "https://adventurenorthernescapes.github.io/hugo-website/"
+baseURL = "https://adventure-northern-escapes.co.uk/"
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'

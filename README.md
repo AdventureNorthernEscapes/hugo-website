@@ -3,7 +3,7 @@
 This repository contains the **Hugo source files** for the Adventure Northern Escapes website.  
 The site is automatically built and deployed to **GitHub Pages** using **GitHub Actions** whenever changes are pushed to the `main` branch.
 
-🔗 **Live site:** [https://adventurenorthernescapes.github.io/hugo-website/](https://adventurenorthernescapes.github.io/hugo-website/)
+🔗 **Live site:** [https://adventure-northern-escapes.co.uk/](https://adventure-northern-escapes.co.uk/)
 
 ---
 
@@ -65,16 +65,16 @@ cd hugo-website
 
 ### 🪜 Step 3: Check Configuration
 
-Open `hugo.toml` and make sure `baseURL` matches the GitHub Pages URL.
+Open `hugo.toml` and make sure `baseURL` matches the production site URL.
 
 For this repo:
 ```toml
-baseURL = "https://adventurenorthernescapes.github.io/hugo-website/"
+baseURL = "https://adventure-northern-escapes.co.uk/"
 relativeURLs = true
 canonifyURLs = true
 ```
 
-If you fork or rename the repo, **update the `baseURL`** to match your new GitHub Pages path.
+If you change the custom domain or deploy the site somewhere else, **update the `baseURL`** to match the public production URL.
 
 ---
 
@@ -145,7 +145,7 @@ git push origin main
 
 | Issue | Cause | Fix |
 |-------|--------|-----|
-| CSS or images not loading | Wrong `baseURL` | Ensure it matches your GitHub Pages URL and includes `/hugo-website/`. |
+| CSS or images not loading | Wrong `baseURL` | Ensure it matches the public production URL. |
 | Build failed in Actions | Missing theme or incorrect version | Confirm theme folder or submodule exists, and Hugo version matches locally. |
 | No auto-deploy | Wrong workflow path | Ensure file is `.github/workflows/deploy.yml` and Actions are enabled in Settings. |
 
