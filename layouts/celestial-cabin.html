@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $email := .Params.hero.contact_email }}
+<section class="hero-section celestial-cabin-hero" style="background-image: url('{{ .Params.hero.background_image | relURL }}'); min-height: 58vh;">
+  <div class="hero-overlay"></div>
+  <div class="container position-relative text-center py-5">
+    <p class="h6 text-primary-custom fw-bold mb-2">{{ .Params.hero.subtitle }}</p>
+    <h1 class="display-2 fw-bold mb-3">{{ .Title }}</h1>
+    <p class="lead mx-auto mb-0" style="max-width: 760px;">
+      For future stays and booking enquiries, guests can contact the Celestial Cabin team directly.
+    </p>
+  </div>
+</section>
+
+<section class="section-padding" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <span class="text-primary-custom fw-bold text-uppercase d-block mb-2">Booking Enquiries</span>
+        <h2 class="display-5 fw-bold mb-4">Planning a future stay?</h2>
+        <p class="lead mb-4">
+          We would be happy to hear from you. Please email us with your preferred dates,
+          group size, and any questions about The Celestial Cabin.
+        </p>
+        <a href="mailto:{{ $email }}" class="btn btn-custom-primary btn-lg mb-3">
+          Email The Celestial Cabin
+        </a>
+        <p class="mb-0">
+          <a href="mailto:{{ $email }}" class="text-primary-custom fw-semibold text-decoration-none">{{ $email }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
