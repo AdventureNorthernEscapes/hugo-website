@@ -1,6 +1,6 @@
 ---
 title: "Creswell Street, St Helens"
-description: "Private Creswell Street stay enquiry page for future booking enquiries."
+description: "Private Creswell Street rental enquiry page for furnished bills-included corporate and contractor enquiries."
 layout: "creswell"
 hide_site_chrome: true
 noindex: true
@@ -8,9 +8,9 @@ _build:
   list: never
 
 property:
-  subtitle: "Private Stay Enquiries"
+  subtitle: "Private Rental Enquiries"
   location: "St Helens, United Kingdom"
-  summary: "A comfortable three-bedroom home for up to six guests, with a fully equipped kitchen, workspace, private access, and practical amenities for short or longer stays."
+  summary: "A practical three-bedroom home for furnished, bills-included corporate or contractor rental enquiries, with private access, workspace, kitchen facilities, and everyday essentials."
   contact_email: "info@adventure-northern-escapes.co.uk"
   hero_image: "/images/case-2-gallery-7.jpg"
   facts:
@@ -18,8 +18,8 @@ property:
       label: "Entire home"
       value: "Private access"
     - icon: "fa-solid fa-users"
-      label: "Guests"
-      value: "Up to 6"
+      label: "Occupancy"
+      value: "Up to 6 occupiers"
     - icon: "fa-solid fa-bed"
       label: "Bedrooms"
       value: "3 bedrooms"
@@ -42,6 +42,11 @@ property:
     - "/images/case-2-gallery-13.jpg"
     - "/images/case-2-gallery-14.jpg"
     - "/images/case-2-gallery-15.jpg"
+  floorplans:
+    - title: "Ground floor"
+      image: "/images/creswell-ground-floor-plan.png"
+    - title: "First floor"
+      image: "/images/creswell-first-floor-plan.png"
   bedrooms:
     - name: "Bedroom one"
       detail: "Super king bed that can be arranged as two singles, plus under-bed storage, clothes rail, desk, and chair."
@@ -59,13 +64,15 @@ property:
     - "Dishwasher"
     - "Microwave, kettle, toaster, and blender"
     - "French press"
-    - "Highchair and baby crib available on request"
     - "Outdoor yard with seating"
-    - "Bedding, linen, towels, and toiletries provided"
+    - "Core furniture and practical household essentials"
   practical_notes:
-    - "Check-in is from 16:00 to 23:00."
-    - "Checkout is before 11:00."
+    - "The property is being positioned for furnished bills-included corporate, contractor, or professional rental enquiries rather than short-stay serviced accommodation."
+    - "Photos show the house dressed and may include decorative items, fresh linen, small finishing touches, or styling that may not match the exact condition at viewing or rental start."
+    - "Small decoration, painting touch-ups, and linen have mostly been removed for a more minimal fully furnished rental setup."
+    - "Decoration and linen can be discussed or brought back by request."
+    - "Bills-included arrangements are subject to agreed terms and reasonable fair-usage expectations."
     - "The home is arranged over two floors, with living space downstairs and bedrooms upstairs."
     - "There is no air conditioning."
-    - "Please treat the home with care and let us know promptly if anything needs attention during your stay."
+    - "Please treat the home with care and report any maintenance issue promptly."
 ---
