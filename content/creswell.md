@@ -1,0 +1,71 @@
+---
+title: "Creswell Street, St Helens"
+description: "Private Creswell Street stay enquiry page for future booking enquiries."
+layout: "creswell"
+hide_site_chrome: true
+noindex: true
+_build:
+  list: never
+
+property:
+  subtitle: "Private Stay Enquiries"
+  location: "St Helens, United Kingdom"
+  summary: "A comfortable three-bedroom home for up to six guests, with a fully equipped kitchen, workspace, private access, and practical amenities for short or longer stays."
+  contact_email: "info@adventure-northern-escapes.co.uk"
+  hero_image: "/images/case-2-gallery-7.jpg"
+  facts:
+    - icon: "fa-solid fa-house"
+      label: "Entire home"
+      value: "Private access"
+    - icon: "fa-solid fa-users"
+      label: "Guests"
+      value: "Up to 6"
+    - icon: "fa-solid fa-bed"
+      label: "Bedrooms"
+      value: "3 bedrooms"
+    - icon: "fa-solid fa-bath"
+      label: "Bathroom"
+      value: "1 bathroom"
+  gallery_images:
+    - "/images/case-2-gallery-1.jpg"
+    - "/images/case-2-gallery-2.jpg"
+    - "/images/case-2-gallery-3.jpg"
+    - "/images/case-2-gallery-4.jpg"
+    - "/images/case-2-gallery-5.jpg"
+    - "/images/case-2-gallery-6.jpg"
+    - "/images/case-2-gallery-7.jpg"
+    - "/images/case-2-gallery-8.jpg"
+    - "/images/case-2-gallery-9.jpg"
+    - "/images/case-2-gallery-10.jpg"
+    - "/images/case-2-gallery-11.jpg"
+    - "/images/case-2-gallery-12.jpg"
+    - "/images/case-2-gallery-13.jpg"
+    - "/images/case-2-gallery-14.jpg"
+    - "/images/case-2-gallery-15.jpg"
+  bedrooms:
+    - name: "Bedroom one"
+      detail: "Super king bed that can be arranged as two singles, plus under-bed storage, clothes rail, desk, and chair."
+    - name: "Bedroom two"
+      detail: "Double bed with clothes storage."
+    - name: "Bedroom three"
+      detail: "Two small singles that can be arranged as one king bed on request, plus clothes storage."
+  amenities:
+    - "Fully equipped kitchen"
+    - "Wifi"
+    - "Dedicated workspace"
+    - "55-inch smart 4K TV"
+    - "Free on-street parking"
+    - "Washer and dryer"
+    - "Dishwasher"
+    - "Microwave, kettle, toaster, and blender"
+    - "French press"
+    - "Highchair and baby crib available on request"
+    - "Outdoor yard with seating"
+    - "Bedding, linen, towels, and toiletries provided"
+  practical_notes:
+    - "Check-in is from 16:00 to 23:00."
+    - "Checkout is before 11:00."
+    - "The home is arranged over two floors, with living space downstairs and bedrooms upstairs."
+    - "There is no air conditioning."
+    - "Please treat the home with care and let us know promptly if anything needs attention during your stay."
+---
